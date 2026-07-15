@@ -2,10 +2,17 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import FloatingContact from '../ui/FloatingContact';
-import PopupModal from '../ui/PopupModal';
+import LeadMagnetModal from '../ui/LeadMagnetModal';
+import ChatBot from '../ui/ChatBot';
+import { useExitIntent } from '../../hooks/useExitIntent';
+import { useLeadContext } from '../../context/LeadContext';
 
 const Layout = () => {
+  const { openModal } = useLeadContext();
+  
+  useExitIntent(() => {
+    openModal("Wait! Let's Discuss Your Project.");
+  });
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -13,8 +20,8 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
-      <FloatingContact />
-      <PopupModal />
+      <ChatBot />
+      <LeadMagnetModal />
     </div>
   );
 };

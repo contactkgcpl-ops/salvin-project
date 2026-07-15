@@ -40,7 +40,7 @@ const CTASection = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link 
-                to="#contact" 
+                to="/contact" 
                 className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-[#F47A20] text-white font-bold rounded-xl hover:bg-white hover:text-[#0B1F35] transition-all duration-300 shadow-xl shadow-[#F47A20]/20 group text-lg"
               >
                 Get Free Consultation
@@ -48,7 +48,7 @@ const CTASection = () => {
               </Link>
               
               <a 
-                href="tel:+919876543210" 
+                href="tel:+919898727796"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-transparent border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-all duration-300 text-lg group"
               >
                 <Phone className="w-5 h-5 mr-3 text-white group-hover:text-[#F47A20] transition-colors" />

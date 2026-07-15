@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLeadContext } from '../../context/LeadContext';
 
 const Navbar = () => {
+  const { openModal } = useLeadContext();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -24,17 +26,19 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { 
-      name: 'Services', 
-      path: '/services',
-      hasDropdown: true,
-      items: ['Turnkey Plant Setup', 'Process Engineering & Consulting', 'Industrial Automation Projects', 'Plant Upgrades & Modernization', 'Operations & Maintenance (O&M)']
-    },
-    { 
       name: 'Industries', 
       hasDropdown: true,
-      items: ['Food & Spices', 'Pharmaceutical', 'Chemical & API', 'Beverage', 'Cosmetics', 'Export Industries']
+      items: [
+        { name: 'Food & Spices', path: '/industries/food-and-spices' },
+        { name: 'Pharmaceutical', path: '/industries/pharmaceutical' },
+        { name: 'Chemical & API', path: '/industries/chemical-and-api' },
+        { name: 'Beverage', path: '/industries/beverage' },
+        { name: 'Cosmetics', path: '/industries/cosmetics' },
+        { name: 'Engineering Expertise', path: '/industries/engineering-expertise' }
+      ]
     },
-    { name: 'Contact Us', path: '#contact' }
+    { name: 'Services', path: '/services' },
+    { name: 'Contact Us', path: '/contact' }
   ];
 
   return (
@@ -44,7 +48,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center z-50">
           <img 
             src="/logo.png" 
-            alt="Salvin Industries" 
+            alt="Salvin Projects" 
             className="h-14"
           />
         </Link>
@@ -87,19 +91,14 @@ const Navbar = () => {
                         {link.items.map((item, i) => (
                           <Link 
                             key={i} 
-                            to="#" 
+                            to={item.path}
+                            onClick={() => setActiveDropdown(null)} 
                             className="text-base text-gray-600 hover:text-[#F47A20] font-medium transition-colors py-2 px-3 hover:bg-orange-50 rounded-lg flex items-center group/item"
                           >
                             <ArrowRight className="w-3 h-3 mr-2 opacity-0 -translate-x-2 transition-all group-hover/item:opacity-100 group-hover/item:translate-x-0 text-[#F47A20]" />
-                            {item}
+                            {item.name}
                           </Link>
                         ))}
-                      </div>
-                      <div className="bg-gray-50 p-4 border-t border-gray-100">
-                        <Link to={link.path || "#"} className="text-base font-semibold text-[#0B1F35] flex items-center justify-between hover:text-[#F47A20] transition-colors">
-                          View all {link.name.toLowerCase()}
-                          <ArrowRight className="w-5 h-5" />
-                        </Link>
                       </div>
                     </motion.div>
                   )}
@@ -111,12 +110,12 @@ const Navbar = () => {
 
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <Link 
-            to="#contact" 
-            className="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-base font-semibold transition-all rounded-full bg-[#0B1F35] text-white hover:bg-[#F47A20]"
+          <button 
+            onClick={() => openModal('Request a Custom Quote')}
+            className="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-base font-semibold transition-all rounded-full bg-[#F47A20] text-white shadow-lg shadow-orange-500/30 hover:bg-[#e06915] hover:scale-105 cursor-pointer"
           >
-            Get Free Consultation
-          </Link>
+            Get a Quote
+          </button>
           
           <button 
             className="lg:hidden p-2 rounded-lg z-50 text-[#0B1F35]"
@@ -131,12 +130,12 @@ const Navbar = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="fixed inset-0 bg-white z-40 lg:hidden pt-24 overflow-y-auto"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="absolute top-full left-0 right-0 bg-white z-40 lg:hidden overflow-y-auto shadow-2xl border-t border-gray-100 max-h-[85vh]"
           >
-            <div className="container mx-auto px-6 flex flex-col gap-6 pb-12">
+            <div className="container mx-auto px-6 flex flex-col gap-6 py-8">
               {navLinks.map((link, idx) => (
                 <div key={idx} className="border-b border-gray-100 pb-4">
                   {link.hasDropdown ? (
@@ -144,23 +143,29 @@ const Navbar = () => {
                       <div className="font-bold text-lg text-[#0B1F35] mb-4">{link.name}</div>
                       <div className="flex flex-col gap-3 pl-4">
                         {link.items.map((item, i) => (
-                          <Link key={i} to="#" className="text-gray-600 font-medium">
-                            {item}
+                          <Link key={i} to={item.path} onClick={() => setMobileMenuOpen(false)} className="text-gray-600 font-medium">
+                            {item.name}
                           </Link>
                         ))}
                       </div>
                     </div>
                   ) : (
-                    <Link to={link.path} className="font-bold text-lg text-[#0B1F35]">
+                    <Link to={link.path} onClick={() => setMobileMenuOpen(false)} className="font-bold text-lg text-[#0B1F35]">
                       {link.name}
                     </Link>
                   )}
                 </div>
               ))}
               <div className="pt-4">
-                <Link to="#contact" className="inline-flex w-full items-center justify-center px-6 py-4 bg-[#F47A20] text-white text-base font-semibold rounded-xl">
-                  Get Free Consultation
-                </Link>
+                <button 
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openModal('Request a Custom Quote');
+                  }} 
+                  className="inline-flex w-full items-center justify-center px-6 py-4 bg-[#F47A20] text-white text-base font-bold rounded-xl shadow-lg cursor-pointer"
+                >
+                  Get a Quote
+                </button>
               </div>
             </div>
           </motion.div>

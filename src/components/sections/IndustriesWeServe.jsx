@@ -2,37 +2,46 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
+import { useNavigate } from 'react-router-dom';
+
 const IndustriesWeServe = () => {
+  const navigate = useNavigate();
   const industries = [
     {
       title: "Food & Spices",
-      image: "/slider-3.png", // Spices factory
-      size: "large" // Span 2 columns
+      image: "/slider-3.png",
+      size: "large",
+      path: "/industries/food-and-spices"
     },
     {
       title: "Pharmaceutical",
-      image: "/slider-2.png", // Pharma
-      size: "normal"
+      image: "/slider-2.png",
+      size: "normal",
+      path: "/industries/pharmaceutical"
     },
     {
       title: "Chemical & API",
-      image: "/chemical-api.png", // Chemical/Lab
-      size: "normal"
+      image: "/chemical-api.png",
+      size: "normal",
+      path: "/industries/chemical-and-api"
     },
     {
       title: "Beverage",
-      image: "/slider-1.png", // Juice/Beverage bottles
-      size: "small" // Span 1 column
+      image: "/slider-1.png",
+      size: "small",
+      path: "/industries/beverage"
     },
     {
       title: "Cosmetics",
-      image: "/export.png", // This is actually the cosmetics image since they got swapped
-      size: "large" // Span 2 columns
+      image: "/export.png", 
+      size: "large",
+      path: "/industries/cosmetics"
     },
     {
-      title: "Export Industries",
-      image: "/cosmetics.png", // This is actually the export image
-      size: "normal"
+      title: "Engineering Expertise",
+      image: "/cosmetics.png", 
+      size: "normal",
+      path: "/industries/engineering-expertise"
     }
   ];
 
@@ -72,6 +81,7 @@ const IndustriesWeServe = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
+              onClick={() => navigate(industry.path)}
               className={`relative rounded-2xl overflow-hidden group cursor-pointer ${
                 industry.size === 'large' ? 'md:col-span-2' : 'col-span-1'
               }`}

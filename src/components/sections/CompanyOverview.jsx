@@ -1,126 +1,89 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const CompanyOverview = () => {
   return (
-    <section id="company" className="py-12 bg-gray-50 overflow-hidden">
+    <section id="company" className="pt-20 pb-32 bg-white overflow-hidden font-sans">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           
-          {/* Left: Asymmetrical Image Layout */}
-          <div className="relative">
+          {/* Left: Classic Professional Overlapping Images */}
+          <div className="w-full lg:w-1/2 relative pb-16 pr-8 sm:pr-12 lg:pr-16">
+            
+            {/* Main Image */}
             <motion.div 
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative z-10 w-[85%] rounded-2xl overflow-hidden shadow-2xl group"
+              className="relative z-10 shadow-2xl rounded-xl overflow-hidden"
             >
               <img 
                 src="/about-plant.png" 
                 alt="Salvin Industrial Plant" 
-                className="w-full h-auto object-cover aspect-[4/3] transition-transform duration-1000 group-hover:scale-110"
+                className="w-full h-auto block hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
-            
+
+            {/* Secondary Overlapping Image */}
             <motion.div 
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="absolute -bottom-10 -right-4 lg:-right-10 z-20 w-[60%] rounded-2xl overflow-hidden shadow-2xl group"
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="absolute -bottom-8 right-0 md:-right-6 z-20 w-[70%] shadow-2xl rounded-xl border-[10px] border-white overflow-hidden bg-white"
             >
               <img 
                 src="/about-engineers.png" 
                 alt="Salvin Engineers" 
-                className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110"
+                className="w-full h-auto block hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
 
-            {/* Decorative Element */}
-            <div className="absolute top-10 -left-10 w-32 h-32 bg-[#F47A20]/10 rounded-full blur-3xl -z-10"></div>
           </div>
 
-          {/* Right: Company Info & Counters */}
-          <div className="pt-10 lg:pt-0">
+          {/* Right: Simple, Grounded Company Profile */}
+          <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-8">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8 }}
             >
-              <h4 className="text-[#F47A20] font-semibold tracking-wider uppercase mb-3 text-sm">About Salvin Industries</h4>
+              <h4 className="text-[#F47A20] font-bold text-sm tracking-widest uppercase mb-4">
+                About Salvin Projects
+              </h4>
+              
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F35] mb-6 leading-tight">
-                Executing World-Class <br/> Turnkey Industrial Projects
+                Your Trusted Engineering Partner for Turnkey Plant Setup
               </h2>
-              <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                With over two decades of excellence, Salvin Industries has established itself as a global EPC (Engineering, Procurement, and Construction) leader. We specialize in providing end-to-end turnkey plant solutions, process automation, and comprehensive engineering services. We don't just supply machinery; we engineer complete project success.
-              </p>
-            </motion.div>
+              
+              <div className="text-gray-600 text-base md:text-lg space-y-5 mb-10 leading-relaxed">
+                <p>
+                  Salvin Projects is a specialized engineering company focused on delivering complete turnkey plant setups, process engineering, and industrial automation. We help manufacturers in pharmaceuticals, chemicals, food & beverage, and cosmetics build robust and highly efficient production facilities.
+                </p>
+                <p>
+                  Instead of just supplying machinery, we take complete ownership of your project. Our team handles everything from the initial facility design and custom equipment fabrication to final installation, piping, and FDA/FSSAI compliance trials.
+                </p>
+                <p>
+                  With decades of practical, on-ground experience, our engineers understand the exact challenges of scaling up production. We ensure your plant is built to international standards, delivered on time, and runs seamlessly from day one.
+                </p>
+              </div>
 
-            {/* Animated Counters */}
-            <div className="grid grid-cols-2 gap-8 mb-10">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="border-l-4 border-[#F47A20] pl-6"
+              <Link 
+                to="/services" 
+                className="inline-flex items-center gap-2 text-white bg-[#0B1F35] px-8 py-4 rounded font-bold hover:bg-[#F47A20] transition-colors shadow-md hover:shadow-lg"
               >
-                <div className="text-4xl font-bold text-[#0B1F35] mb-1">25<span className="text-[#F47A20]">+</span></div>
-                <div className="text-sm text-gray-500 font-medium">Years of Experience</div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="border-l-4 border-[#F47A20] pl-6"
-              >
-                <div className="text-4xl font-bold text-[#0B1F35] mb-1">500<span className="text-[#F47A20]">+</span></div>
-                <div className="text-sm text-gray-500 font-medium">Projects Completed</div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="border-l-4 border-[#F47A20] pl-6"
-              >
-                <div className="text-4xl font-bold text-[#0B1F35] mb-1">12<span className="text-[#F47A20]">+</span></div>
-                <div className="text-sm text-gray-500 font-medium">Industries Served</div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="border-l-4 border-[#F47A20] pl-6"
-              >
-                <div className="text-4xl font-bold text-[#0B1F35] mb-1">50<span className="text-[#F47A20]">+</span></div>
-                <div className="text-sm text-gray-500 font-medium">Global Partners</div>
-              </motion.div>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <Link to="/about" className="inline-flex items-center gap-2 text-[#0B1F35] font-semibold border-b-2 border-[#0B1F35] pb-1 hover:text-[#F47A20] hover:border-[#F47A20] transition-colors group">
-                Learn More About Us
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                Explore Our Services
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
           </div>
         </div>
       </div>
+
     </section>
   );
 };

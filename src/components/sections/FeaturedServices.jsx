@@ -6,34 +6,34 @@ import { Link } from 'react-router-dom';
 const FeaturedServices = () => {
   const services = [
     {
-      title: "Turnkey Plant Setup",
-      description: "End-to-end execution of large-scale industrial projects. We manage everything from initial plant layout and civil guidance to equipment manufacturing, installation, and final commissioning.",
-      image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Concept to Commissioning", "Cost & Timeline Management", "Single-Point Responsibility"]
+      title: "Complete Plant Setup",
+      description: "We handle the entire process of building your new factory from the ground up. From the initial layout design to manufacturing the machines and final testing, we do it all.",
+      image: "/images/service-plant-setup.jpg",
+      features: ["Start to Finish Setup", "Custom Machine Design", "Full Responsibility"]
     },
     {
-      title: "Process Engineering & Consulting",
-      description: "Expert engineering consultation to design highly efficient process workflows, optimize facility layouts, and ensure compliance with global GMP and FDA standards.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Feasibility Studies", "Process Optimization", "Regulatory Compliance"]
+      title: "Food Processing Solutions",
+      description: "We build specialized factories for the food and spice industry. Our machinery ensures your products are processed safely, cleanly, and without losing their natural taste.",
+      image: "/images/service-food-processing.jpg",
+      features: ["Clean & Safe Setup", "High Production Speed", "International Standards"]
     },
     {
-      title: "Industrial Automation Projects",
-      description: "Designing and deploying state-of-the-art PLC, SCADA, and IoT systems for entire plants to minimize human error, reduce downtime, and achieve unprecedented production control.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Plant-Wide SCADA Systems", "Robotics Integration", "Centralized Monitoring"]
+      title: "Engineering Consultancy",
+      description: "We provide expert consultancy and guidance to design highly efficient factory layouts, automate processes, and select the right machinery for your specific needs.",
+      image: "/images/service-consultancy.jpg",
+      features: ["Process Optimization", "Factory Layout Design", "Technology Consulting"]
     },
     {
-      title: "Plant Upgrades & Modernization",
-      description: "Transforming legacy manufacturing facilities into highly efficient, automated modern plants. We upgrade equipment, control systems, and processes with minimal downtime.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Capacity Expansion", "Technology Retrofitting", "Energy Optimization"]
+      title: "Machinery Upgrades",
+      description: "If your factory is using old equipment, we can upgrade it with modern technology to increase your production capacity without needing to build a whole new plant.",
+      image: "/images/service-upgrades.jpg",
+      features: ["Increase Production", "Add Modern Tech", "Save Energy"]
     },
     {
-      title: "Operations & Maintenance (O&M)",
-      description: "Comprehensive Annual Maintenance Contracts (AMC) and lifecycle support to ensure your industrial plant runs smoothly with maximum uptime and extended asset lifespan.",
-      image: "https://images.unsplash.com/photo-1621415668351-4b130e61d8a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Preventive Maintenance", "24/7 Technical Support", "Performance Tuning"]
+      title: "Maintenance & Support",
+      description: "We provide regular servicing and emergency support for your factory equipment. This ensures your machines never break down and your business keeps running smoothly.",
+      image: "/images/service-maintenance.jpg",
+      features: ["Regular Checkups", "24/7 Support Team", "Prevent Breakdowns"]
     }
   ];
 
@@ -113,8 +113,8 @@ const FeaturedServices = () => {
                     ))}
                   </ul>
 
-                  <Link to="#" className="inline-flex items-center justify-center px-6 py-2.5 bg-transparent border border-gray-200 hover:border-[#F47A20] text-[#0B1F35] text-sm font-semibold rounded-lg transition-all duration-300 hover:bg-[#F47A20] hover:text-white group">
-                    Explore Service
+                  <Link to="/contact" className="inline-flex items-center justify-center px-6 py-2.5 bg-transparent border border-gray-200 hover:border-[#F47A20] text-[#0B1F35] text-sm font-semibold rounded-lg transition-all duration-300 hover:bg-[#F47A20] hover:text-white group">
+                    Discuss Project
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </motion.div>
@@ -123,18 +123,6 @@ const FeaturedServices = () => {
             );
           })}
         </div>
-
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <Link to="/services" className="inline-flex items-center justify-center px-6 py-3 bg-[#0B1F35] text-white text-sm font-bold rounded-lg transition-all duration-300 hover:bg-gray-800 hover:shadow-xl shadow-gray-200 group">
-            View All Services
-            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-[#F47A20]" />
-          </Link>
-        </motion.div>
 
       </div>
     </section>

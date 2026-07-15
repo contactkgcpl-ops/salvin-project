@@ -31,15 +31,41 @@ const Footer = () => {
           </div>
 
           {/* Right: Links */}
-          <div className="w-full lg:w-1/2 flex flex-col sm:flex-row justify-end lg:pl-12 gap-12 sm:gap-24">
+          <div className="w-full lg:w-1/2 flex flex-col sm:flex-row justify-end lg:pl-12 gap-10 sm:gap-16">
             {/* Services */}
             <div>
-              <h4 className="text-gray-500 text-sm mb-6">Services</h4>
-              <ul className="space-y-3">
-                {['Turnkey Plant Setup', 'Process Engineering', 'Industrial Automation', 'Plant Upgrades', 'Operations & Maintenance'].map((item, idx) => (
+              <h4 className="text-gray-500 text-base mb-6">Services</h4>
+              <ul className="space-y-5">
+                {[
+                  { name: 'Turnkey Plant Setup', path: '/services/turnkey-plant-setup' },
+                  { name: 'Process Engineering', path: '/services/process-engineering' },
+                  { name: 'Industrial Automation', path: '/services/industrial-automation' },
+                  { name: 'Plant Upgrades', path: '/services/plant-upgrades' },
+                  { name: 'Operations & Maintenance', path: '/services/operations-maintenance' }
+                ].map((item, idx) => (
                   <li key={idx}>
-                    <Link to="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-                      {item}
+                    <Link to={item.path} className="text-[15px] text-gray-300 hover:text-white transition-colors">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Industries */}
+            <div>
+              <h4 className="text-gray-500 text-base mb-6">Industries</h4>
+              <ul className="space-y-5">
+                {[
+                  { name: 'Pharmaceuticals', path: '/industries/pharmaceutical' },
+                  { name: 'Chemicals & APIs', path: '/industries/chemical-api' },
+                  { name: 'Beverages', path: '/industries/beverage' },
+                  { name: 'Cosmetics', path: '/industries/cosmetics' },
+                  { name: 'Food & Spices', path: '/industries/food-spices' }
+                ].map((item, idx) => (
+                  <li key={idx}>
+                    <Link to={item.path} className="text-[15px] text-gray-300 hover:text-white transition-colors">
+                      {item.name}
                     </Link>
                   </li>
                 ))}
@@ -48,12 +74,17 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-gray-500 text-sm mb-6">Quick Links</h4>
-              <ul className="space-y-3">
-                {['Home', 'About Us', 'Contact Us', 'Our Team', 'Career'].map((item, idx) => (
+              <h4 className="text-gray-500 text-base mb-6">Quick Links</h4>
+              <ul className="space-y-5">
+                {[
+                  { name: 'Home', path: '/' },
+                  { name: 'Services', path: '/services/turnkey-plant-setup' },
+                  { name: 'Industries', path: '/industries/pharmaceutical' },
+                  { name: 'Contact Us', path: '/contact' }
+                ].map((item, idx) => (
                   <li key={idx}>
-                    <Link to="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-                      {item}
+                    <Link to={item.path} className="text-[15px] text-gray-300 hover:text-white transition-colors">
+                      {item.name}
                     </Link>
                   </li>
                 ))}
@@ -94,15 +125,14 @@ const Footer = () => {
             {/* Contact Details */}
             <div className="flex flex-col items-center md:items-end gap-3 text-sm text-gray-400">
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                <span className="flex items-center gap-2"><Phone className="w-4 h-4 text-white"/> +91 9876543210</span>
-                <span className="flex items-center gap-2"><Phone className="w-4 h-4 text-white"/> +91 9876543211</span>
+                <span className="flex items-center gap-2"><Phone className="w-4 h-4 text-white"/> +91 9898727796</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-white"/> info@salvinindia.com
+                <Mail className="w-4 h-4 text-white"/> info.salvinindustries@gmail.com
               </div>
-              <div className="flex items-center gap-2 mt-2">
-                <MapPin className="w-4 h-4 text-white shrink-0"/> 
-                123 Industrial Estate, Phase II, Ahmedabad, Gujarat, 380001
+              <div className="flex items-center gap-2 mt-2 text-right">
+                <MapPin className="w-5 h-5 text-white shrink-0"/> 
+                210, Arved Transcube Mall, Bandhu Nagar, Vijay Nagar, Ranip, Ahmedabad, Gujarat 382480, India
               </div>
             </div>
           </div>
