@@ -6,7 +6,7 @@ import EngineeringProcess from '../components/sections/EngineeringProcess';
 import Leadership from '../components/sections/Leadership';
 import IndustriesWeServe from '../components/sections/IndustriesWeServe';
 import WhyChooseUs from "../components/sections/WhyChooseUs";
-import ClientReviews from "../components/sections/ClientReviews";
+import FAQ from "../components/sections/FAQ";
 import CTASection from '../components/sections/CTASection';
 import SEO from '../components/SEO';
 
@@ -14,18 +14,18 @@ const Home = () => {
   return (
     <div className="w-full overflow-hidden font-sans">
       <SEO 
-        title="Salvin Projects | Turnkey Engineering & Automation Solutions"
-        description="Leading provider of turnkey plant setups, process engineering, and industrial automation for food, pharma, and chemical industries."
-        keywords="turnkey plant, process engineering, industrial automation, Salvin Projects"
+        title="Salvin Projects | Turnkey Project Setup for Food, Pharma & Chemical Plants"
+        description="Leading provider of turnkey project setup, food and spices plant, pharma plant setup, and beverage manufacturing plant setups."
+        keywords="turnkey project setup, plant setup, food and spices plant, pharma plant setup, cosmetic manufacturing plant, chemical plant setup, beverage plant project"
       />
       <Hero />
-      <CompanyOverview />
       <FeaturedServices />
+      <CompanyOverview />
       <EngineeringProcess />
-      <Leadership />
       <IndustriesWeServe />
+      <Leadership />
       <WhyChooseUs />
-      <ClientReviews />
+      <FAQ />
       <CTASection />
     </div>
   );

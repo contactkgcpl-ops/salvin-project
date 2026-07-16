@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Quote } from 'lucide-react';
+import { Quote, User } from 'lucide-react';
 
 const Leadership = () => {
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="pt-16 pb-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
           {/* Left: Image with Frame */}
-          <div className="w-full lg:w-5/12 relative">
+          <div className="w-full sm:w-3/4 md:w-2/3 lg:w-4/12 relative mx-auto lg:mx-0">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -30,11 +30,19 @@ const Leadership = () => {
               <div className="absolute -top-6 -left-6 w-16 h-16 bg-[#0B1F35] rounded-full flex items-center justify-center shadow-xl z-20">
                 <Quote className="w-7 h-7 text-[#F47A20] fill-[#F47A20] rotate-180" />
               </div>
+
+              {/* Name Badge */}
+              <div className="absolute -bottom-8 -left-4 sm:-left-8 bg-white rounded-xl shadow-2xl px-6 py-4 flex items-center gap-4 z-20 border border-gray-50">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
+                  <User className="w-5 h-5 text-blue-600" />
+                </div>
+                <span className="font-bold text-[#0B1F35] text-lg tracking-wide">Er. Keval Gandhi</span>
+              </div>
             </motion.div>
           </div>
 
           {/* Right: Content */}
-          <div className="w-full lg:w-7/12">
+          <div className="w-full lg:w-8/12 lg:pl-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -53,11 +61,6 @@ const Leadership = () => {
                 <p>
                   "Our commitment to precision and quality has made us a trusted partner for manufacturing companies worldwide. We continuously invest in advanced technology and our talented team to ensure we deliver unparalleled value in every turnkey project we undertake."
                 </p>
-              </div>
-
-              <div className="pt-6 border-t border-gray-100">
-                <h3 className="text-2xl font-bold text-[#0B1F35] mb-1">Er. Keval Gandhi</h3>
-                <p className="text-[#F47A20] font-semibold text-xs tracking-widest uppercase">Director, Salvin India</p>
               </div>
             </motion.div>
           </div>

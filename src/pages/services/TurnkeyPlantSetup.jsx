@@ -11,9 +11,9 @@ const TurnkeyPlantSetup = () => {
   return (
     <div className="w-full font-sans">
       <SEO 
-        title="Turnkey Plant Setup | Salvin Projects"
-        description="Comprehensive turnkey plant setup services from conceptual design to full commissioning and validation."
-        keywords="turnkey plant setup, conceptual design, engineering, procurement, commissioning"
+        title="Complete Turnkey Plant Setup | Salvin Projects"
+        description="Comprehensive turnkey project setup services for food, pharma, cosmetic, chemical, and beverage manufacturing."
+        keywords="turnkey plant setup, turnkey project setup, factory setup, manufacturing plant installation"
       />
       
       <div className="bg-[#0B1F35] pt-32 pb-20">

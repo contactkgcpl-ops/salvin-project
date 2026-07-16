@@ -8,9 +8,9 @@ const PlantUpgrades = () => {
   return (
     <div className="w-full overflow-hidden">
       <SEO 
-        title="Plant Upgrades & Modernization | Salvin Projects"
-        description="Upgrade your existing manufacturing plants with the latest technology to increase capacity and reduce downtime."
-        keywords="plant upgrades, plant modernization, manufacturing expansion, machinery upgrades"
+        title="Plant Upgrades & Expansion | Salvin Projects"
+        description="Upgrade your existing manufacturing plants with our complete project setup services to increase capacity."
+        keywords="plant upgrades, plant expansion, manufacturing plant upgrade, turnkey plant expansion"
       />
       <div className="bg-[#0B1F35] pt-32 pb-20">
         <div className="container mx-auto px-6 md:px-12 text-center">

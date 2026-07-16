@@ -48,9 +48,9 @@ const Beverage = () => {
   return (
     <div className="w-full bg-[#FAFAFA] font-sans">
       <SEO 
-        title="Beverage Processing & Bottling | Salvin Projects"
-        description="High-speed beverage processing and bottling solutions for juices, carbonated drinks, and dairy products."
-        keywords="beverage processing plant, bottling line automation, juice processing, dairy plant setup"
+        title="Beverage Plant Setup | Turnkey Beverage Projects"
+        description="Complete turnkey project setup for beverage manufacturing, cold drinks, juices, and dairy plants."
+        keywords="beverage manufacturing plant setup, cold drink plant setup, turnkey beverage project, juice plant setup"
       />
       
       {/* Hero Section */}

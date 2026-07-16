@@ -80,15 +80,15 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="group h-full"
             >
-              <div className={`h-full p-10 rounded-2xl border transition-all duration-300 transform group-hover:-translate-y-2 ${
+              <div className={`h-full p-6 sm:p-8 rounded-2xl border transition-all duration-300 transform group-hover:-translate-y-2 ${
                 reason.highlight 
                   ? 'bg-[#0B1F35] border-[#0B1F35] text-white shadow-2xl shadow-[#0B1F35]/20' 
                   : 'bg-white border-gray-100 text-[#0B1F35] hover:shadow-xl hover:border-gray-200'
               }`}>
-                <div className={`text-6xl font-serif font-bold mb-6 transition-colors duration-300 ${reason.highlight ? 'text-white/20' : 'text-gray-100 group-hover:text-[#F47A20]/20'}`}>
+                <div className={`text-5xl font-serif font-bold mb-4 transition-colors duration-300 ${reason.highlight ? 'text-white/20' : 'text-gray-100 group-hover:text-[#F47A20]/20'}`}>
                   0{idx + 1}
                 </div>
-                <h3 className={`text-2xl font-bold mb-4 ${reason.highlight ? 'text-white' : 'text-[#0B1F35]'}`}>
+                <h3 className={`text-xl font-bold mb-3 ${reason.highlight ? 'text-white' : 'text-[#0B1F35]'}`}>
                   {reason.title}
                 </h3>
                 <p className={`leading-relaxed text-sm ${reason.highlight ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
                 </p>
                 
                 {/* Subtle Decorative Line */}
-                <div className={`w-12 h-1 mt-8 rounded-full transition-all duration-300 ${reason.highlight ? 'bg-[#F47A20]' : 'bg-gray-200 group-hover:bg-[#F47A20] group-hover:w-16'}`}></div>
+                <div className={`w-10 h-1 mt-6 rounded-full transition-all duration-300 ${reason.highlight ? 'bg-[#F47A20]' : 'bg-gray-200 group-hover:bg-[#F47A20] group-hover:w-14'}`}></div>
               </div>
             </motion.div>
           ))}

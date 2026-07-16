@@ -48,9 +48,9 @@ const Pharmaceutical = () => {
   return (
     <div className="w-full font-sans bg-[#FAFAFA]">
       <SEO 
-        title="Pharmaceutical Processing Plants | Salvin Projects"
-        description="High-precision pharmaceutical processing lines designed for cGMP compliance and absolute sterility."
-        keywords="pharmaceutical machinery, pharma processing plant, cGMP compliance, sterile manufacturing"
+        title="Pharma Plant Setup | Turnkey Pharmaceutical Projects"
+        description="Complete turnkey project setup for pharmaceutical manufacturing, medicine plants, and sterile facilities."
+        keywords="pharma plant setup, pharmaceutical turnkey project, medicine manufacturing plant setup, pharma machinery"
       />
       
       {/* Hero Section */}

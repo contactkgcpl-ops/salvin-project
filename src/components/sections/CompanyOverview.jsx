@@ -9,10 +9,9 @@ const CompanyOverview = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           
-          {/* Left: Classic Professional Overlapping Images */}
-          <div className="w-full lg:w-1/2 relative pb-16 pr-8 sm:pr-12 lg:pr-16">
+          {/* Left: Single Main Image */}
+          <div className="w-full lg:w-1/2 relative pb-8 pr-4 sm:pr-8 lg:pr-12">
             
-            {/* Main Image */}
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -21,23 +20,8 @@ const CompanyOverview = () => {
               className="relative z-10 shadow-2xl rounded-xl overflow-hidden"
             >
               <img 
-                src="/about-plant.png" 
-                alt="Salvin Industrial Plant" 
-                className="w-full h-auto block hover:scale-105 transition-transform duration-700"
-              />
-            </motion.div>
-
-            {/* Secondary Overlapping Image */}
-            <motion.div 
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="absolute -bottom-8 right-0 md:-right-6 z-20 w-[70%] shadow-2xl rounded-xl border-[10px] border-white overflow-hidden bg-white"
-            >
-              <img 
-                src="/about-engineers.png" 
-                alt="Salvin Engineers" 
+                src="/images/food-plant.jpg" 
+                alt="Salvin Industrial Plant Machinery" 
                 className="w-full h-auto block hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
@@ -57,18 +41,18 @@ const CompanyOverview = () => {
               </h4>
               
               <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F35] mb-6 leading-tight">
-                Your Trusted Engineering Partner for Turnkey Plant Setup
+                We Setup Complete Manufacturing Plants For You
               </h2>
               
               <div className="text-gray-600 text-base md:text-lg space-y-5 mb-10 leading-relaxed">
                 <p>
-                  Salvin Projects is a specialized engineering company focused on delivering complete turnkey plant setups, process engineering, and industrial automation. We help manufacturers in pharmaceuticals, chemicals, food & beverage, and cosmetics build robust and highly efficient production facilities.
+                  Salvin Projects helps you set up complete factories and manufacturing plants. Whether you want to start a new business in Food, Spices, Pharma, Cosmetics, Chemicals, or Beverages, we provide the complete setup from start to finish.
                 </p>
                 <p>
-                  Instead of just supplying machinery, we take complete ownership of your project. Our team handles everything from the initial facility design and custom equipment fabrication to final installation, piping, and FDA/FSSAI compliance trials.
+                  Instead of just selling you machines, we take full responsibility for your entire project. Our team handles the factory design, provides all the necessary machinery, does the complete installation, and makes sure your plant is running perfectly.
                 </p>
                 <p>
-                  With decades of practical, on-ground experience, our engineers understand the exact challenges of scaling up production. We ensure your plant is built to international standards, delivered on time, and runs seamlessly from day one.
+                  With many years of real experience, we know exactly how to set up a successful factory. We make sure your plant is built safely, delivered on time, and is ready for production from day one.
                 </p>
               </div>
 

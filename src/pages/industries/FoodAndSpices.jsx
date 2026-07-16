@@ -48,9 +48,9 @@ const FoodAndSpices = () => {
   return (
     <div className="w-full bg-[#FAFAFA] font-sans">
       <SEO 
-        title="Food & Spices Processing Plants | Salvin Projects"
-        description="State-of-the-art processing plants for the food and spices industry. Customized engineering for hygiene, yield, and quality."
-        keywords="food processing plant, spices manufacturing plant, hygienic engineering, food industry automation"
+        title="Food & Spices Plant Setup | Complete Turnkey Projects"
+        description="Turnkey plant setup for the food and spices industry. Complete food processing plant and spices manufacturing plant projects."
+        keywords="food processing plant setup, spices manufacturing plant, turnkey food project, food industry plant setup"
       />
       
       {/* Hero Section */}

@@ -8,9 +8,9 @@ const IndustrialAutomation = () => {
   return (
     <div className="w-full overflow-hidden">
       <SEO 
-        title="Industrial Automation | Salvin Projects"
-        description="Cutting-edge industrial automation solutions using SCADA, PLC, and IoT for smart manufacturing."
-        keywords="industrial automation, SCADA, PLC programming, smart manufacturing, industry 4.0"
+        title="Plant Automation | Salvin Projects"
+        description="Cutting-edge plant automation solutions for smart manufacturing and turnkey project setups."
+        keywords="plant automation, manufacturing plant automation, automated plant setup, turnkey automation"
       />
       <div className="bg-[#0B1F35] pt-32 pb-20">
         <div className="container mx-auto px-6 md:px-12 text-center">

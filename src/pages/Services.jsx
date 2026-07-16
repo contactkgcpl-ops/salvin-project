@@ -32,9 +32,9 @@ const Services = () => {
   return (
     <div className="w-full font-sans bg-[#FAFAFA] min-h-screen pt-32 pb-20">
       <SEO 
-        title="Our Services | Salvin Projects"
-        description="Comprehensive engineering and automation services from turnkey setups to process optimization and SCADA integration."
-        keywords="engineering services, turnkey plant, automation, plant design, Salvin Projects"
+        title="Plant Setup Services | Salvin Projects"
+        description="Comprehensive services for turnkey project setups, plant automation, and manufacturing plant design."
+        keywords="turnkey project services, plant setup services, manufacturing plant design, automation services"
       />
       
       <div className="container mx-auto px-6 md:px-12">

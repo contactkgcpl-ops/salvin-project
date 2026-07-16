@@ -9,9 +9,9 @@ const OperationsMaintenance = () => {
   return (
     <div className="w-full overflow-hidden">
       <SEO 
-        title="Operations & Maintenance | Salvin Projects"
-        description="Reliable operations and maintenance services, including preventive maintenance, spares support, and troubleshooting."
-        keywords="plant maintenance, preventive maintenance, industrial troubleshooting, OEM spares"
+        title="Plant Maintenance Services | Salvin Projects"
+        description="Reliable plant maintenance and operations services for turnkey manufacturing plant setups."
+        keywords="plant maintenance, manufacturing plant operations, turnkey plant support, plant services"
       />
       <div className="bg-[#0B1F35] pt-32 pb-20">
         <div className="container mx-auto px-6 md:px-12 text-center">

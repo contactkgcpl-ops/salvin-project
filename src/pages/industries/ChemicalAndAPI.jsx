@@ -48,9 +48,9 @@ const ChemicalAndAPI = () => {
   return (
     <div className="w-full bg-[#FAFAFA] font-sans">
       <SEO 
-        title="Chemical & API Processing Plants | Salvin Projects"
-        description="Robust and scalable chemical and API processing plants engineered for maximum safety and efficiency."
-        keywords="chemical processing plant, API manufacturing, industrial chemical equipment, reactor vessels"
+        title="Chemical & API Plant Setup | Turnkey Chemical Projects"
+        description="Complete turnkey project setup for chemical plants and API manufacturing."
+        keywords="chemical plant setup, API manufacturing plant setup, turnkey chemical project, industrial chemical plant"
       />
       
       {/* Hero Section */}

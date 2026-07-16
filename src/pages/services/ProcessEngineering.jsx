@@ -8,9 +8,9 @@ const ProcessEngineering = () => {
   return (
     <div className="w-full overflow-hidden">
       <SEO 
-        title="Process Engineering | Salvin Projects"
-        description="Expert process engineering and optimization for maximizing yield, efficiency, and safety in manufacturing."
-        keywords="process engineering, process optimization, manufacturing efficiency, Salvin Projects"
+        title="Plant Design & Engineering | Salvin Projects"
+        description="Expert engineering for plant setup, maximizing yield, efficiency, and safety in manufacturing."
+        keywords="plant setup engineering, manufacturing plant design, process engineering for plants"
       />
       <div className="bg-[#0B1F35] pt-32 pb-20">
         <div className="container mx-auto px-6 md:px-12 text-center">

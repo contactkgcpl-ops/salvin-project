@@ -13,7 +13,7 @@ const EngineeringProcess = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 overflow-hidden">
+    <section className="pt-12 pb-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         
         <div className="text-center max-w-3xl mx-auto mb-20">

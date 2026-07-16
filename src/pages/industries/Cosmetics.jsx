@@ -48,9 +48,9 @@ const Cosmetics = () => {
   return (
     <div className="w-full bg-[#FAFAFA] font-sans">
       <SEO 
-        title="Cosmetics & Personal Care Manufacturing | Salvin Projects"
-        description="Premium automated manufacturing lines for cosmetics, creams, lotions, and personal care products."
-        keywords="cosmetics manufacturing plant, personal care production, mixing vessels, cream filling machine"
+        title="Cosmetics Plant Setup | Turnkey Cosmetic Projects"
+        description="Complete turnkey plant setup for cosmetics manufacturing, beauty products, creams, and lotions."
+        keywords="cosmetic manufacturing plant setup, beauty product plant, turnkey cosmetic project, cream plant setup"
       />
       
       {/* Hero Section */}

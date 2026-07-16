@@ -25,9 +25,9 @@ const Contact = () => {
   return (
     <div className="w-full bg-[#F3F4F6] font-sans pt-32 pb-0">
       <SEO 
-        title="Contact Us | Salvin Projects"
-        description="Get in touch with Salvin Projects for technical proposals, plant upgrades, and custom engineering solutions."
-        keywords="contact Salvin Projects, engineering consultation, technical proposal"
+        title="Contact Us for Plant Setup | Salvin Projects"
+        description="Get in touch with Salvin Projects for turnkey project setup, plant upgrades, and manufacturing plant installations."
+        keywords="contact for plant setup, turnkey project consultation, factory setup inquiry"
       />
       
       {/* Top Section: Form */}
