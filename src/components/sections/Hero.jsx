@@ -1,32 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const slides = [
   {
-    image: "/slider-1.png",
-    subtitle: "Beverage Plant Setup",
+    image: "/slider-new-1.png",
+    eyebrow: "Turnkey Liquid Filling Solutions",
     title: "Complete Beverage \n& Bottling Plant Setup",
-    desc: "Turnkey project setup for liquid filling and beverage manufacturing.",
-    linkText: "EXPLORE BEVERAGE",
-    alignment: "center"
+    desc: "End-to-end solutions from business planning and plant design to execution and commissioning.",
   },
   {
-    image: "/slider-2.png",
-    subtitle: "Pharma Plant Setup",
+    image: "/slider-new-2.jpg",
+    eyebrow: "Advanced Hygienic Solutions",
     title: "Pharmaceutical \nPlant Setup Experts",
-    desc: "Complete turnkey pharma projects designed with the highest hygiene standards.",
-    linkText: "EXPLORE PHARMA",
-    alignment: "center"
+    desc: "Complete turnkey pharma projects designed with the highest hygiene standards and regulatory compliance.",
   },
   {
-    image: "/slider-3.png",
-    subtitle: "Food & Spices Plant Setup",
-    title: "Complete Food & Spices \nManufacturing Plants",
-    desc: "Turnkey plant setup for food processing, filling, and packaging.",
-    linkText: "EXPLORE OUR EXPERTISE",
-    alignment: "center"
+    image: "/slider-new-3.jpg",
+    eyebrow: "Engineering the Future of Food Processing",
+    title: "Food, Spices, Agri & \nDairy Processing Setup",
+    desc: "Turnkey plant setup for food processing, filling, and automated packaging.",
   }
 ];
 
@@ -36,85 +29,93 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
-  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-
   return (
-    <section className="relative h-[75vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden bg-[#0B1F35]">
+    <section className="relative h-[85vh] min-h-[600px] w-full bg-white flex items-center overflow-hidden">
+      
+      {/* Left Content Area */}
+      <div className="relative z-20 w-full lg:w-[50%] px-6 md:px-12 lg:pl-24 flex flex-col justify-center h-full">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={`content-${currentSlide}`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-xl"
+          >
+            {/* Eyebrow */}
+            <p className="text-[#64C240] font-bold text-sm md:text-base mb-3">
+              {slides[currentSlide].eyebrow}
+            </p>
 
-      {/* Background Images */}
-      <AnimatePresence initial={false}>
-        <motion.div
-          key={currentSlide}
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url("${slides[currentSlide].image}")` }}
-        />
-      </AnimatePresence>
+            {/* Main Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0B1F35] leading-[1.1] mb-6 whitespace-pre-line tracking-tight">
+              {slides[currentSlide].title}
+            </h1>
 
-      {/* Overlay - Restored teal color */}
-      <div className="absolute inset-0 bg-[#0FA3B1]/60 mix-blend-multiply z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/20 to-transparent z-10"></div>
+            {/* Description */}
+            <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed max-w-md">
+              {slides[currentSlide].desc}
+            </p>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-[#0B1F35]/80 text-white flex items-center justify-center hover:bg-[#0B1F35] transition-colors"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-[#0B1F35]/80 text-white flex items-center justify-center hover:bg-[#0B1F35] transition-colors"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
-
-      {/* Content */}
-      <div className="container relative z-20 mx-auto px-12 md:px-24 h-full flex flex-col justify-center pt-20">
-        <div className={`w-full max-w-5xl ${slides[currentSlide].alignment === 'center' ? 'mx-auto text-center flex flex-col items-center' : 'text-left flex flex-col items-start'}`}>
-
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`content-${currentSlide}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.6 }}
-              className={`flex flex-col ${slides[currentSlide].alignment === 'center' ? 'items-center' : 'items-start'}`}
-            >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-tight mb-6 drop-shadow-2xl whitespace-pre-line">
-                {slides[currentSlide].title}
-              </h1>
-
-              {slides[currentSlide].subtitle && (
-                <p className="text-2xl md:text-3xl font-light tracking-wide text-white/95 mb-8 max-w-3xl drop-shadow-md">
-                  {slides[currentSlide].subtitle}
-                </p>
-              )}
-
-              {/* Separator Line */}
-              <div className="w-16 h-[2px] bg-white mb-6"></div>
-
-              {/* Minimal Text Link */}
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-4">
               <Link
-                to="/services"
-                className="inline-flex items-center text-white text-sm md:text-base font-bold tracking-widest uppercase hover:text-[#F47A20] transition-colors group"
+                to="/contact"
+                className="bg-[#0B1F35] text-white px-8 py-3 text-sm font-bold tracking-wide hover:bg-[#153457] transition-colors"
               >
-                {slides[currentSlide].linkText}
-                <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" />
+                GET A QUOTE
               </Link>
-            </motion.div>
-          </AnimatePresence>
+              <Link
+                to="/turnkey-projects"
+                className="border-2 border-[#0B1F35] text-[#0B1F35] px-8 py-3 text-sm font-bold tracking-wide hover:bg-[#0B1F35] hover:text-white transition-colors"
+              >
+                OUR PROJECTS
+              </Link>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
-        </div>
+      {/* Right Image Area with Diagonal Split */}
+      {/* Background Accent Layer (Blue top half, Green bottom half) */}
+      <div 
+        className="absolute top-0 right-0 h-full w-[70%] lg:w-[60%] z-0 bg-gradient-to-b from-[#0B1F35] from-[50%] to-[#64C240] to-[50%]"
+        style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}
+      ></div>
+
+      {/* Image Layer (Shifted slightly to the right to reveal the accent border on the left edge) */}
+      <div 
+        className="absolute top-0 right-0 h-full w-[70%] lg:w-[60%] z-10 translate-x-[12px] md:translate-x-[16px]"
+        style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}
+      >
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={currentSlide}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url("${slides[currentSlide].image}")` }}
+          />
+        </AnimatePresence>
+      </div>
+
+      {/* Optional Slider Dots for manual navigation */}
+      <div className="absolute bottom-8 left-6 md:left-12 lg:left-24 z-30 flex gap-2">
+        {slides.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentSlide(idx)}
+            className={`w-12 h-2 transition-colors ${currentSlide === idx ? 'bg-[#0B1F35]' : 'bg-gray-300'}`}
+            aria-label={`Go to slide ${idx + 1}`}
+          />
+        ))}
       </div>
 
     </section>

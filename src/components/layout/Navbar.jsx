@@ -37,6 +37,7 @@ const Navbar = () => {
         { name: 'Engineering Expertise', path: '/industries/engineering-expertise' }
       ]
     },
+    { name: 'Turnkey Projects', path: '/turnkey-projects' },
     { name: 'Services', path: '/services' },
     { name: 'Contact Us', path: '/contact' }
   ];

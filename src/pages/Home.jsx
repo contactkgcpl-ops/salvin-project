@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div className="w-full overflow-hidden font-sans">
       <SEO 
-        title="Salvin Projects | Turnkey Project Setup for Food, Pharma & Chemical Plants"
-        description="Leading provider of turnkey project setup, food and spices plant, pharma plant setup, and beverage manufacturing plant setups."
-        keywords="turnkey project setup, plant setup, food and spices plant, pharma plant setup, cosmetic manufacturing plant, chemical plant setup, beverage plant project"
+        title="Salvin Projects | Turnkey Plant Setup in Ahmedabad, Gujarat, India"
+        description="Leading provider of turnkey plant setup in Ahmedabad. Experts in food and spices plant, pharma plant setup, and beverage manufacturing plant setups across India."
+        keywords="turnkey plant setup ahmedabad, plant setup in ahmedabad, turnkey project setup, food and spices plant ahmedabad, pharma plant setup gujarat, cosmetic manufacturing plant, chemical plant setup india"
       />
       <Hero />
       <FeaturedServices />
