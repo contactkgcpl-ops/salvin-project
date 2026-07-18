@@ -54,8 +54,10 @@ const Cosmetics = () => {
       />
       
       {/* Hero Section */}
-      <section className="relative pt-40 pb-32 bg-[#0B1F35] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/cosmetics-hero-bg.png')] bg-cover bg-center opacity-40 blur-[2px] scale-105"></div>
+      <section className="relative pt-52 pb-44 bg-[#0B1F35] overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/cosmetics-hero-bg.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/40 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F47A20]/30 to-transparent"></div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -65,8 +67,17 @@ const Cosmetics = () => {
             <h4 className="text-[#F47A20] font-bold tracking-widest uppercase mb-4 text-sm">Industrial Expertise</h4>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Cosmetics & Personal Care</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Specialized turnkey engineering for premium creams, lotions, and liquid cosmetics, ensuring perfect emulsions and filling accuracy.
+              Precision-engineered processing plants tailored for the flawless production of premium personal care and beauty products.
             </p>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to="/contact" className="px-8 py-3.5 bg-[#F47A20] text-white font-bold rounded-xl hover:bg-white hover:text-[#0B1F35] transition-colors duration-300 flex items-center gap-2">
+                Consult With Us
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link to="/services" className="px-8 py-3.5 bg-transparent border-2 border-white/30 text-white font-bold rounded-xl hover:border-white hover:bg-white/10 transition-colors duration-300">
+                Explore Services
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>

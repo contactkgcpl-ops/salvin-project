@@ -155,7 +155,7 @@ export default function InstantMixFrozenFoodDetailPage() {
               Download Brochure
             </a>
 
-            
+
             <a href="#enquiry" className="imff-btn imff-btn--outline">
               Enquire Now
             </a>

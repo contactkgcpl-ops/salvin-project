@@ -21,8 +21,8 @@ const CORE_PROJECTS = {
       title: 'Complete CTC Tea Processing Solution',
       p1: 'Salvin Industries provides complete turnkey solutions for CTC Tea Processing Plants, offering advanced systems for tea leaf handling, withering, rolling, fermentation, drying, sorting, and packaging. Our solutions are designed to maximize productivity while maintaining tea quality and consistency.',
       p2: 'Our modern processing technologies ensure efficient manufacturing, uniform granule formation, and preservation of tea aroma, flavor, and color. Advanced automation improves operational efficiency while maintaining stringent quality standards.',
-      image: '/turnkey-brochures/images/ctc-tea-processing-plant/tea_plant_hero.jpg',
-      photoImage: '/turnkey-brochures/images/ctc-tea-processing-plant/tea_plant_hero.jpg',
+      image: '/turnkey-brochures/images/ctc-tea-processing-plant/tea_leaf_receiving.jpg',
+      photoImage: '/turnkey-brochures/images/ctc-tea-processing-plant/tea_leaf_receiving.jpg',
       features4: [
         { title: 'Hygienic Processing', desc: 'Food grade construction for safe tea production' },
         { title: 'Uniform Granules', desc: 'Advanced CTC technology for consistent size' },
@@ -81,8 +81,8 @@ const CORE_PROJECTS = {
         { title: 'OEE Optimised', desc: '85%+ Overall Equipment Effectiveness target' },
         { title: 'Global Standards', desc: 'FSSAI, FDA, CE, ISO 22000 compliant designs' }
       ],
-      image: '/turnkey-brochures/images/3_beetroot.png',
-      photoImage: '/turnkey-brochures/images/beetroot-gallery/juice-extractor.jpg',
+      image: '/turnkey-brochures/images/beetroot-gallery/washing-machine.png',
+      photoImage: '/turnkey-brochures/images/beetroot-gallery/washing-machine.png',
       features4: [
         { title: 'Maximum Juice Yield', desc: 'High-pressure screw press extraction per batch' },
         { title: 'Nutrient Retention', desc: 'Cold processing preserves vitamins and enzymes' },
@@ -162,8 +162,8 @@ const CORE_PROJECTS = {
         { title: 'High Thermal OEE', desc: 'Heat-recovery boiling and drying lines cut fuel consumption by 25%.' },
         { title: 'Aflatoxin-Safe Dryers', desc: 'Enclosed hot-air circulation prevents moisture mold and bacterial growth.' }
       ],
-      image: '/turnkey-brochures/images/4_turmeric.png',
-      photoImage: '/turnkey-brochures/images/turmeric-gallery/micro_pulverizer.jpg',
+      image: '/turnkey-brochures/images/turmeric-gallery/drum_washing_system.jpg',
+      photoImage: '/turnkey-brochures/images/turmeric-gallery/drum_washing_system.jpg',
       features4: [
         { title: 'Curcumin Preserved', desc: 'Cryogenic grinding locks in active curcumin value' },
         { title: 'Hygienic Process', desc: 'Food grade SS304/SS316L enclosed construction' },
@@ -244,8 +244,8 @@ const CORE_PROJECTS = {
         { title: 'HMF Optimization', desc: 'Careful temperature profiling prevents Hydroxymethylfurfural (HMF) spikes.' },
         { title: 'Precision Bottling', desc: 'Drip-free rotary filling ensures consistent bottle volumes.' }
       ],
-      image: '/turnkey-brochures/images/5_honey.png',
-      photoImage: '/turnkey-brochures/images/honey-gallery/piston_filler.png',
+      image: '/turnkey-brochures/images/honey-gallery/drum_liquefaction.png',
+      photoImage: '/turnkey-brochures/images/honey-gallery/drum_liquefaction.png',
       features4: [
         { title: 'Viscosity Preserved', desc: 'Gentle warming retains natural honey texture' },
         { title: 'HMF Controlled', desc: 'Temperature profiling prevents enzyme degradation' },
@@ -324,8 +324,8 @@ const CORE_PROJECTS = {
         { title: 'Automatic Pitting', desc: 'High-speed mechanical pitting rollers extract seeds without tearing flesh.' },
         { title: 'Vacuum Freshness', desc: 'Packaging lines lock in texture and moisture for shelf-life extension.' }
       ],
-      image: '/turnkey-brochures/images/6_dates.png',
-      photoImage: '/turnkey-brochures/images/dates-gallery/pitting_machine.png',
+      image: '/turnkey-brochures/images/dates-gallery/bubble_washer.png',
+      photoImage: '/turnkey-brochures/images/dates-gallery/bubble_washer.png',
       features4: [
         { title: 'Gentle Handling', desc: 'Air bubble washers protect delicate date skins' },
         { title: 'Automatic Pitting', desc: 'High-speed needle pitters extract seeds cleanly' },
@@ -405,8 +405,8 @@ const CORE_PROJECTS = {
         { title: 'Jacketed Piping', desc: 'Steam-heated transfer lines prevent material solidifying.' },
         { title: 'Vacuum Deaeration', desc: 'Removes air bubbles during blending to yield smooth jelly texture.' }
       ],
-      image: '/turnkey-brochures/images/7_petrolium_jelly.png',
-      photoImage: '/turnkey-brochures/images/petrojelly-gallery/vacuum_emulsifier.png',
+      image: '/turnkey-brochures/images/petrojelly-gallery/wax_melter.png',
+      photoImage: '/turnkey-brochures/images/petrojelly-gallery/wax_melter.png',
       features4: [
         { title: 'GMP Compliant', desc: 'Meets FDA and pharmaceutical manufacturing norms' },
         { title: 'Vacuum Deaeration', desc: 'Air-free blending yields perfectly smooth jelly' },
@@ -487,8 +487,8 @@ const CORE_PROJECTS = {
         { title: 'Retort Sterilization', desc: 'Overpressure autoclaves achieve full sterility for ambient storage.' },
         { title: 'Syrup Dosing', desc: 'Precise syrup dispensers maintain consistent Brix ratios.' }
       ],
-      image: '/turnkey-brochures/images/8_jackfruit.png',
-      photoImage: '/turnkey-brochures/images/jackfruit-gallery/retort_autoclave.png',
+      image: '/turnkey-brochures/images/jackfruit-gallery/belt_blancher.png',
+      photoImage: '/turnkey-brochures/images/jackfruit-gallery/belt_blancher.png',
       features4: [
         { title: 'Hermetic Seaming', desc: 'Double-seam can lids ensure absolute seal integrity' },
         { title: 'Retort Sterilized', desc: 'Autoclave sterilization for ambient shelf storage' },
@@ -595,7 +595,7 @@ const CORE_PROJECTS = {
         { title: 'Multi-stage Dryers', desc: 'Convective tunnel dryers reduce moisture to 12% without stress fractures.' },
         { title: 'Die Adaptability', desc: 'Quick-change bronze or teflon dies support multiple pasta shapes.' }
       ],
-      image: '/turnkey-brochures/images/9_pasta_making.png',
+      image: '/turnkey-brochures/images/beetroot-gallery/conveyor_machine.png',
       photoImage: '/turnkey-brochures/images/beetroot-gallery/conveyor_machine.png',
       features4: [
         { title: 'Vacuum Extrusion', desc: 'Air-free dough prevents cracking during tunnel drying' },
@@ -675,8 +675,8 @@ const CORE_PROJECTS = {
         { title: 'Colloid Mill Grinding', desc: 'High-shear micronization achieves ultra-smooth or crunchy textures.' },
         { title: 'Vacuum Deaeration', desc: 'Prevents oil rancidity and extends ambient shelf life.' }
       ],
-      image: '/turnkey-brochures/images/10_peanut_butter.png',
-      photoImage: '/turnkey-brochures/images/beetroot-gallery/processing_pipes.png',
+      image: '/turnkey-brochures/images/beetroot-gallery/industrial_plant.png',
+      photoImage: '/turnkey-brochures/images/beetroot-gallery/industrial_plant.png',
       features4: [
         { title: 'Uniform Roasting', desc: 'Consistent heat profile develops rich peanut aroma' },
         { title: 'Colloid Grinding', desc: 'High-shear mill achieves smooth or crunchy texture' },
@@ -752,8 +752,8 @@ const CORE_PROJECTS = {
         { title: 'OEE Optimised', desc: '85%+ Overall Equipment Effectiveness target' },
         { title: 'Global Standards', desc: 'FSSAI, FDA, CE, ISO 22000 compliant designs' }
       ],
-      image: '/turnkey-brochures/images/11_ginger_garlic_plant.png',
-      photoImage: '/turnkey-brochures/images/beetroot-gallery/steel_tanks.png',
+      image: '/turnkey-brochures/images/beetroot-gallery/washing-machine.png',
+      photoImage: '/turnkey-brochures/images/beetroot-gallery/washing-machine.png',
       features4: [
         { title: 'Aroma Preserved', desc: 'Rapid processing retains natural pungency and oils' },
         { title: 'Hygienic Process', desc: 'Food grade SS304/SS316L line with CIP system' },
@@ -801,8 +801,8 @@ const CORE_PROJECTS = {
         { title: 'OEE Optimised', desc: '85%+ Overall Equipment Effectiveness target' },
         { title: 'Global Standards', desc: 'FSSAI, FDA, CE, ISO 22000 compliant designs' }
       ],
-      image: '/turnkey-brochures/images/12_blank_pepper_powder.png',
-      photoImage: '/turnkey-brochures/images/turmeric-gallery/impact_crusher.jpg',
+      image: '/turnkey-brochures/images/red-chilli-gallery/chilli_cleaning_line.png',
+      photoImage: '/turnkey-brochures/images/red-chilli-gallery/chilli_cleaning_line.png',
       features4: [
         { title: 'Piperine Preserved', desc: 'Cryogenic grinding protects volatile pepper oils' },
         { title: 'Consistent Mesh', desc: 'Classified sieving for uniform powder particle size' },
@@ -852,8 +852,8 @@ const CORE_PROJECTS = {
         { title: 'OEE Optimised', desc: '85%+ Overall Equipment Effectiveness target' },
         { title: 'Global Standards', desc: 'FSSAI, FDA, CE, ISO 22000 compliant designs' }
       ],
-      image: '/turnkey-brochures/images/13_seed_cleaning_sorting.png',
-      photoImage: '/turnkey-brochures/images/red-chilli-gallery/chilli_sorting_optical.png',
+      image: '/turnkey-brochures/images/red-chilli-gallery/chilli_cleaning_line.png',
+      photoImage: '/turnkey-brochures/images/red-chilli-gallery/chilli_cleaning_line.png',
       features4: [
         { title: 'High Purity Output', desc: 'Multi-stage cleaning removes all foreign material' },
         { title: 'Optical Sorting', desc: 'CCD colour sorters reject damaged or off-colour seeds' },
@@ -1061,8 +1061,8 @@ const CORE_PROJECTS = {
         { title: 'Fully Automated', desc: 'Continuous processing from washing to packing' },
         { title: 'High Precision', desc: 'Accurate cutting, slicing, and ingredient dosing' }
       ],
-      image: '/turnkey-brochures/images/pickle-processing-plant/pickle_infographic.jpg',
-      photoImage: '/turnkey-brochures/images/pickle-processing-plant/pickle_infographic.jpg',
+      image: '/turnkey-brochures/images/pickle-processing-plant/pickle_washing.jpg',
+      photoImage: '/turnkey-brochures/images/pickle-processing-plant/pickle_washing.jpg',
       features4: [
         { title: 'Hygienic Design', desc: 'Food-grade stainless steel construction' },
         { title: 'PLC Automation', desc: 'Strict recipe control and batch traceability' },
@@ -1133,8 +1133,8 @@ const CORE_PROJECTS = {
       title: 'Complete Milk Powder Plant',
       p1: 'Salvin Industries\' Milk Powder Processing & Packaging Plant is an advanced, fully automated turnkey solution engineered for producing high-quality milk powder. Our integrated lines handle everything from raw milk reception and standardization to evaporation, spray drying, and aseptic packaging.',
       p2: 'Built in compliance with international food safety and dairy standards, our systems ensure precise temperature control, optimal moisture content, and high solubility of the final powder while maximizing energy efficiency and product yield.',
-      image: '/turnkey-brochures/images/milk-powder-processing-plant/milk_powder_infographic.jpg',
-      photoImage: '/turnkey-brochures/images/milk-powder-processing-plant/milk_powder_infographic.jpg',
+      image: '/turnkey-brochures/images/milk-powder-processing-plant/raw_milk_storage.jpg',
+      photoImage: '/turnkey-brochures/images/milk-powder-processing-plant/raw_milk_storage.jpg',
       benefits: [
         { title: 'Consistent Quality', desc: 'Advanced evaporation and spray drying ensures uniform particle size and solubility.' },
         { title: 'Hygienic Design', desc: 'Fully CIP-able stainless steel construction meets strict dairy industry standards.' },
@@ -1182,7 +1182,7 @@ const CORE_PROJECTS = {
     workflowTitle: 'Economical Kurkure Plant',
     workflowAccentTitle: 'Workflow',
 
-    heroImage: '/turnkey-brochures/images/economical-kurkure-plant/kurkure_hero_overview.jpg',
+    heroImage: '/turnkey-brochures/images/economical-kurkure-plant/kurkure_hero_banner_new.png',
     heroStyle: { width: '100%', height: '100%', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundColor: '#0f172a', animation: 'none', transform: 'none' },
     pdfFile: 'kurkure.pdf',
     stats: { capacity: '100 Kg–500 Kg', stages: '7 Stage', efficiency: '98%', support: '24/7' },
@@ -1196,8 +1196,8 @@ const CORE_PROJECTS = {
         { title: 'Hygienic Operation', desc: 'Food-grade stainless steel construction.' }
       ],
       isBrochure: true,
-      image: '/turnkey-brochures/images/economical-kurkure-plant/kurkure_hero_overview.jpg',
-      photoImage: '/turnkey-brochures/images/economical-kurkure-plant/kurkure_hero_overview.jpg',
+      image: '/turnkey-brochures/images/economical-kurkure-plant/kurkure_plant_overview_new.png',
+      photoImage: '/turnkey-brochures/images/economical-kurkure-plant/kurkure_plant_overview_new.png',
       features4: [
         { title: 'Food Grade', desc: 'SS304/SS316 material' },
         { title: 'Cost Effective', desc: 'Economical design' },
@@ -1270,8 +1270,8 @@ const CORE_PROJECTS = {
         { title: 'High Yield', desc: 'Optimized for maximum product recovery.' }
       ],
       isBrochure: true,
-      image: '/turnkey-brochures/images/protein-powder-production-plant/protein-powder-hero.jpg',
-      photoImage: '/turnkey-brochures/images/protein-powder-production-plant/protein-powder-hero.jpg',
+      image: '/turnkey-brochures/images/protein-powder-production-plant/raw-material-handling-system.jpg',
+      photoImage: '/turnkey-brochures/images/protein-powder-production-plant/raw-material-handling-system.jpg',
       features4: [
         { title: 'Hygienic Design', desc: 'SS304/SS316 food-grade construction' },
         { title: 'Precision Dosing', desc: 'Accurate ingredient measurement' },
@@ -1357,8 +1357,8 @@ const CORE_PROJECTS = {
         { title: 'Automated Operations', desc: 'Advanced PLCs control the entire baking process.' }
       ],
       isBrochure: true,
-      image: '/turnkey-brochures/images/31_biskuit_plant.png',
-      photoImage: '/turnkey-brochures/images/31_biskuit_plant.png',
+      image: '/turnkey-brochures/images/biscuit-baking-turnkey/continuous-baking-oven.jpg',
+      photoImage: '/turnkey-brochures/images/biscuit-baking-turnkey/continuous-baking-oven.jpg',
       features4: [
         { title: 'Hygienic Design', desc: 'Food-grade stainless steel construction' },
         { title: 'Energy Efficient', desc: 'Optimized thermal management' },
@@ -1591,8 +1591,8 @@ const CORE_PROJECTS = {
         { title: 'Full Digital Traceability', desc: 'End-to-end batch and product traceability with QR/barcode and blockchain-ready data.' }
       ],
       isBrochure: false,
-      image: '/turnkey-brochures/images/industry-4-automation-food-plant/plc-scada-control-system.jpg',
-      photoImage: '/turnkey-brochures/images/industry-4-automation-food-plant/plc-scada-control-system.jpg',
+      image: '/turnkey-brochures/images/industry-4-automation-food-plant/automated-material-handling-system.jpg',
+      photoImage: '/turnkey-brochures/images/industry-4-automation-food-plant/automated-material-handling-system.jpg',
       features4: [
         { title: 'PLC & SCADA Control', desc: 'Centralised recipe management and real-time process control across all plant equipment' },
         { title: 'Industrial IoT Monitoring', desc: 'Live OEE, energy and machine health dashboards on web and mobile' },
@@ -1669,8 +1669,8 @@ const CORE_PROJECTS = {
         { title: 'High-Speed Packaging', desc: 'Automated FFS machines with nitrogen flushing preserve freshness and extend shelf life.' }
       ],
       isBrochure: false,
-      image: '/turnkey-brochures/images/roasted-nuts-snacks-making-plant/roasted-nuts-hero-banner.jpg',
-      photoImage: '/turnkey-brochures/images/roasted-nuts-snacks-making-plant/roasted-nuts-hero-banner.jpg',
+      image: '/turnkey-brochures/images/roasted-nuts-snacks-making-plant/continuous-nuts-roasting-system.jpg',
+      photoImage: '/turnkey-brochures/images/roasted-nuts-snacks-making-plant/continuous-nuts-roasting-system.jpg',
       features4: [
         { title: 'Automated Cleaning', desc: 'Efficiently removes stones, dust, and foreign materials from raw nuts.' },
         { title: 'Continuous Roasting', desc: 'Precise temperature control for optimal roasting and flavour development.' },
@@ -1747,8 +1747,8 @@ const CORE_PROJECTS = {
         { title: 'Hygienic Design', desc: 'Fully enclosed processing lines prevent contamination and ensure food safety.' }
       ],
       isBrochure: false,
-      image: '/turnkey-brochures/images/fruit-powder-processing-plant/fruit-powder-brochure.jpg',
-      photoImage: '/turnkey-brochures/images/fruit-powder-processing-plant/fruit-powder-brochure.jpg',
+      image: '/turnkey-brochures/images/fruit-powder-processing-plant/spray-drying-system-new.jpg',
+      photoImage: '/turnkey-brochures/images/fruit-powder-processing-plant/spray-drying-system-new.jpg',
       features4: [
         { title: 'Automated Cleaning', desc: 'Efficiently removes dirt and foreign materials from raw fruits.' },
         { title: 'Precision Pulping', desc: 'High-yield pulping systems for maximum extraction.' },
@@ -1824,8 +1824,8 @@ const CORE_PROJECTS = {
         { title: 'Hygienic Design', desc: 'Fully enclosed processing lines prevent contamination and ensure food safety.' }
       ],
       isBrochure: false,
-      image: '/turnkey-brochures/images/fry-onions-processing-plant/fry-onions-brochure.jpg',
-      photoImage: '/turnkey-brochures/images/fry-onions-processing-plant/fry-onions-brochure.jpg',
+      image: '/turnkey-brochures/images/fry-onions-processing-plant/fry_onions_overview_new.png',
+      photoImage: '/turnkey-brochures/images/fry-onions-processing-plant/fry_onions_overview_new.png',
       features4: [
         { title: 'Automated Peeling', desc: 'Efficiently removes skin and roots from raw onions.' },
         { title: 'Precision Slicing', desc: 'High-speed slicers for uniform onion rings or flakes.' },
@@ -1903,8 +1903,8 @@ const CORE_PROJECTS = {
         { title: 'Hygienic Design', desc: 'Fully enclosed dust-free processing lines prevent contamination and ensure food safety compliance.' }
       ],
       isBrochure: true,
-      image: '/turnkey-brochures/images/nutrition-powder-making-production-plant/nutrition-powder-brochure.jpg',
-      photoImage: '/turnkey-brochures/images/nutrition-powder-making-production-plant/nutrition-powder-brochure.jpg',
+      image: '/turnkey-brochures/images/nutrition-powder-making-production-plant/spray-drying-milling-system.jpg',
+      photoImage: '/turnkey-brochures/images/nutrition-powder-making-production-plant/spray-drying-milling-system.jpg',
       features4: [
         { title: 'SS304/SS316 Construction', desc: 'Food-grade hygienic construction for safe powder manufacturing.' },
         { title: 'Automated Batch Control', desc: 'PLC-controlled processing with recipe management and traceability.' },
@@ -2127,9 +2127,27 @@ export function getProjectDetails(slug, title = '') {
   if (slug === 'coriander-powder-plant') {
     project.heroImage = '/turnkey-brochures/images/coriander-powder/coriander_powder_hero.png';
   }
-  if (slug === 'banana-chips-processing-plant') {
-
+        if (slug === 'banana-chips-processing-plant') {
     project.heroImage = '/turnkey-brochures/images/banana-chips-processing-plant/banana_chips_hero_banner.png';
+    project.overview.image = '/turnkey-brochures/images/banana-chips-processing-plant/banana_slicer.png';
+    project.overview.photoImage = '/turnkey-brochures/images/banana-chips-processing-plant/banana_slicer.png';
+    project.machinery = [
+      { name: 'Raw Banana Washing System', image: '/turnkey-brochures/images/banana-chips-processing-plant/banana_washing.png', desc: 'Automated bubble washing conveyor for thorough cleaning of raw green bananas.' },
+      { name: 'Raw Banana Slicing Machine', image: '/turnkey-brochures/images/banana-chips-processing-plant/banana_slicer.png', desc: 'High-speed rotary slicers ensuring uniform thickness for perfectly crisp banana chips.' },
+      { name: 'Continuous Frying System', image: '/turnkey-brochures/images/banana-chips-processing-plant/banana_fryer.png', desc: 'Advanced continuous fryers with automated temperature control for consistent golden frying.' },
+      { name: 'Quality Inspection & Sorting', image: '/turnkey-brochures/images/banana-chips-processing-plant/banana_sorting.png', desc: 'Stainless steel mesh conveyor for manual or optical sorting of fried chips.' },
+      { name: 'Flavoring & Seasoning Drum', image: '/turnkey-brochures/images/banana-chips-processing-plant/banana_seasoning.png', desc: 'Rotary seasoning drums for even coating of spices and flavors on every chip.' },
+      { name: 'Automatic VFFS Packaging Machine', image: '/turnkey-brochures/images/banana-chips-processing-plant/banana_packing.png', desc: 'High-speed vertical form fill seal packaging machines with nitrogen flushing to maintain freshness.' }
+    ];
+    project.gallery = [
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_chips_hero_banner.png', caption: 'Banana Chips Processing Plant' },
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_washing.png', caption: 'Raw Banana Washing System' },
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_slicer.png', caption: 'Raw Banana Slicing Machine' },
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_fryer.png', caption: 'Continuous Frying System' },
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_sorting.png', caption: 'Quality Inspection & Sorting' },
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_seasoning.png', caption: 'Flavoring & Seasoning Drum' },
+      { src: '/turnkey-brochures/images/banana-chips-processing-plant/banana_packing.png', caption: 'Automatic Packaging Machine' }
+    ];
   }
 
   dynamicProjectCache[slug] = project;
