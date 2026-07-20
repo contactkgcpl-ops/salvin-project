@@ -1,4 +1,4 @@
-import HeroIMG from "../../../assets/turnkey-plant-bg-2.png";
+import HeroIMG from "../../../assets/turnkey-plant-bg-2.webp";
 
 function HeroSection() {
   return (

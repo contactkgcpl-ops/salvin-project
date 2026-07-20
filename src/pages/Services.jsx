@@ -32,9 +32,50 @@ const Services = () => {
   return (
     <div className="w-full font-sans bg-[#FAFAFA] min-h-screen pt-32 pb-20">
       <SEO 
-        title="Plant Setup Services | Salvin Projects"
-        description="Comprehensive services for turnkey project setups, plant automation, and manufacturing plant design."
-        keywords="turnkey project services, plant setup services, manufacturing plant design, automation services"
+        title="Industrial Plant Setup & Engineering Services | KMG Projects"
+        description="Comprehensive services for turnkey project setups, process engineering, plant automation, and manufacturing plant design globally."
+        keywords="turnkey project services, plant setup services, manufacturing plant design, industrial automation services, process engineering consultant"
+        url="https://kmgprojects.in/services"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Turnkey Plant Setup and Engineering",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "KMG Projects"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Engineering Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Turnkey Plant Setup"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Process Engineering"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Industrial Automation"
+                }
+              }
+            ]
+          }
+        }}
       />
       
       <div className="container mx-auto px-6 md:px-12">

@@ -11,37 +11,37 @@ const Pharmaceutical = () => {
       id: "01",
       name: "Liquid Syrup Manufacturing",
       description: "Automated closed-loop vessel systems with homogenizers for the sterile preparation of syrups, suspensions, and oral liquids.",
-      image: "/images/pharma-liquid.jpg"
+      image: "/images/pharma-liquid.webp"
     },
     {
       id: "02",
       name: "Blister Packaging Lines",
       description: "High-speed thermoforming and cold-forming blister packaging machines for tablets and capsules ensuring perfect seal integrity.",
-      image: "/images/pharma-blister.jpg"
+      image: "/images/pharma-blister.webp"
     },
     {
       id: "03",
       name: "High Shear Mixer Granulators",
       description: "Advanced RMG systems designed for uniform dry mixing and wet granulation in the solid dosage manufacturing process.",
-      image: "/images/pharma-mixer.jpg"
+      image: "/images/pharma-mixer.webp"
     },
     {
       id: "04",
       name: "Automatic Vial Filling",
       description: "Sterile filling, stoppering, and sealing lines for injectable vials with absolute weight accuracy and no-drip mechanisms.",
-      image: "/images/pharma-vial.jpg"
+      image: "/images/pharma-vial.webp"
     },
     {
       id: "05",
       name: "Fluid Bed Dryers (FBD)",
       description: "Highly efficient fluidization dryers for rapid and uniform drying of wet pharmaceutical granules with explosion-proof safety.",
-      image: "/images/pharma-fbd.jpg"
+      image: "/images/pharma-fbd.webp"
     },
     {
       id: "06",
       name: "Rotary Tablet Press",
       description: "High-output, automated multi-station tablet presses ensuring precise weight control, thickness, and hardness of tablets.",
-      image: "/images/pharma-tablet.jpg"
+      image: "/images/pharma-tablet.webp"
     }
   ];
 
@@ -55,7 +55,7 @@ const Pharmaceutical = () => {
       
       {/* Hero Section */}
       <section className="relative pt-52 pb-44 bg-[#0B1F35] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/pharma-hero-bg.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('/images/pharma-hero-bg.webp')] bg-cover bg-center opacity-50"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F47A20]/30 to-transparent"></div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
@@ -158,7 +158,7 @@ const Pharmaceutical = () => {
                 <motion.img 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
-                  src="/images/pharma-overview.jpg" 
+                  src="/images/pharma-overview.webp" 
                   alt="Pharmaceutical Plant Operations" 
                   className="w-full h-auto rounded-2xl object-cover"
                 />

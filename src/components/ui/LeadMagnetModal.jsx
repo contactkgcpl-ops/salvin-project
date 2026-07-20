@@ -56,7 +56,7 @@ const LeadMagnetModal = () => {
 
           {/* Left Side: Value Proposition */}
           <div className="w-full md:w-[45%] bg-[#0B1F35] p-8 md:p-10 flex flex-col justify-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/slider-1.png')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/slider-1.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
             
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-6 leading-tight">

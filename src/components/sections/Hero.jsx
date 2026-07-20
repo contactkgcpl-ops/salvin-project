@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 const slides = [
   {
-    image: "/slider-new-1.png",
+    image: "/slider-new-1.webp",
     eyebrow: "Turnkey Liquid Filling Solutions",
     title: "Complete Beverage \n& Bottling Plant Setup",
     desc: "End-to-end solutions from business planning and plant design to execution and commissioning.",
   },
   {
-    image: "/slider-new-2.jpg",
+    image: "/slider-new-2.webp",
     eyebrow: "Advanced Hygienic Solutions",
     title: "Pharmaceutical \nPlant Setup Experts",
     desc: "Complete turnkey pharma projects designed with the highest hygiene standards and regulatory compliance.",
   },
   {
-    image: "/slider-new-3.jpg",
+    image: "/slider-new-3.webp",
     eyebrow: "Engineering the Future of Food Processing",
     title: "Food, Spices, Agri & \nDairy Processing Setup",
     desc: "Turnkey plant setup for food processing, filling, and automated packaging.",
@@ -34,10 +34,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-[85vh] min-h-[600px] w-full bg-white flex items-center overflow-hidden">
+    <section className="relative h-auto min-h-[100svh] md:min-h-[600px] md:h-[85vh] w-full bg-white flex items-start md:items-center overflow-hidden">
       
+      {/* Inject custom CSS for responsive clip path */}
+      <style>{`
+        .hero-clip { clip-path: none; }
+        @media (min-width: 768px) {
+          .hero-clip { clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); }
+        }
+      `}</style>
+
       {/* Left Content Area */}
-      <div className="relative z-20 w-full lg:w-[50%] px-6 md:px-12 lg:pl-24 flex flex-col justify-center h-full">
+      <div className="relative z-20 w-full lg:w-[50%] px-6 md:px-12 lg:pl-24 flex flex-col justify-center h-auto md:h-full pt-12 pb-[40vh] md:pt-0 md:pb-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${currentSlide}`}
@@ -81,25 +89,26 @@ const Hero = () => {
         </AnimatePresence>
       </div>
 
-      {/* Right Image Area with Diagonal Split */}
+      {/* Right Image Area with Diagonal Split on Desktop */}
       {/* Background Accent Layer (Blue top half, Green bottom half) */}
       <div 
-        className="absolute top-0 right-0 h-full w-[70%] lg:w-[60%] z-0 bg-gradient-to-b from-[#0B1F35] from-[50%] to-[#64C240] to-[50%]"
-        style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}
+        className="absolute bottom-0 md:top-0 right-0 h-[38vh] md:h-full w-full md:w-[70%] lg:w-[60%] z-0 bg-gradient-to-b from-[#0B1F35] from-[50%] to-[#64C240] to-[50%] hero-clip"
       ></div>
 
-      {/* Image Layer (Shifted slightly to the right to reveal the accent border on the left edge) */}
+      {/* Image Layer */}
       <div 
-        className="absolute top-0 right-0 h-full w-[70%] lg:w-[60%] z-10 translate-x-[12px] md:translate-x-[16px]"
-        style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}
+        className="absolute bottom-0 md:top-0 right-0 h-[38vh] md:h-full w-full md:w-[70%] lg:w-[60%] z-10 translate-x-0 md:translate-x-[16px] hero-clip border-t-[6px] border-[#64C240] md:border-t-0"
       >
         <AnimatePresence initial={false}>
           <motion.div
             key={currentSlide}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
+            initial={{ opacity: 0, zIndex: 10 }}
+            animate={{ opacity: 1, zIndex: 10 }}
+            exit={{ opacity: 0.99, zIndex: 0 }}
+            transition={{ 
+              opacity: { duration: 1.2, ease: "easeInOut" },
+              zIndex: { duration: 0 }
+            }}
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url("${slides[currentSlide].image}")` }}
           />

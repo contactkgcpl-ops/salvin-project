@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center z-50">
           <img 
-            src="/logo.png" 
+            src="/logo.webp" 
             alt="Salvin Projects" 
             className="h-14"
           />

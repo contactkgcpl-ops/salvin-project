@@ -14,9 +14,28 @@ const Home = () => {
   return (
     <div className="w-full overflow-hidden font-sans">
       <SEO 
-        title="Salvin Projects | Turnkey Plant Setup in Ahmedabad, Gujarat, India"
-        description="Leading provider of turnkey plant setup in Ahmedabad. Experts in food and spices plant, pharma plant setup, and beverage manufacturing plant setups across India."
+        title="Salvin Projects | Turnkey Plant Setup & Industrial Engineering Experts"
+        description="Leading provider of turnkey plant setups, process engineering, and industrial automation in Ahmedabad, India. We specialize in food, pharma, chemical, and cosmetic plants."
         keywords="turnkey plant setup ahmedabad, plant setup in ahmedabad, turnkey project setup, food and spices plant ahmedabad, pharma plant setup gujarat, cosmetic manufacturing plant, chemical plant setup india"
+        url="https://kmgprojects.in/"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Salvin Projects",
+          "url": "https://kmgprojects.in/",
+          "logo": "https://kmgprojects.in/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9925186661",
+            "contactType": "customer service",
+            "areaServed": ["IN", "Global"],
+            "availableLanguage": ["en", "hi", "gu"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/salvinprojects",
+            "https://www.linkedin.com/company/salvinprojects"
+          ]
+        }}
       />
       <Hero />
       <FeaturedServices />

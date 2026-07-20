@@ -29,16 +29,18 @@ html {
   font-size: 14px;
 }
 
+/* Fix missing cursor pointers on interactive elements */
+button, a, input[type="submit"], input[type="button"], [role="button"] {
+  cursor: pointer;
+}
+
 body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
+/* Smooth Scrolling removed for better performance */
 
 /* Custom Scrollbar for premium feel */
 ::-webkit-scrollbar {

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import indus from '../../../assets/about-salvin.jpg';
+import indus from '../../../assets/about-salvin.webp';
 
 function AboutSection() {
   return (

@@ -25,9 +25,44 @@ const Contact = () => {
   return (
     <div className="w-full bg-[#F3F4F6] font-sans pt-32 pb-0">
       <SEO 
-        title="Contact Us for Plant Setup | Salvin Projects"
-        description="Get in touch with Salvin Projects for turnkey project setup, plant upgrades, and manufacturing plant installations."
-        keywords="contact for plant setup, turnkey project consultation, factory setup inquiry"
+        title="Contact Us for Plant Setup | KMG Projects"
+        description="Get in touch with KMG Projects for turnkey project setup, plant upgrades, and manufacturing plant installations in India and globally."
+        keywords="contact for plant setup, turnkey project consultation, factory setup inquiry, KMG projects contact, engineering consultant"
+        url="https://kmgprojects.in/contact"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "KMG Projects",
+          "image": "https://kmgprojects.in/logo.webp",
+          "url": "https://kmgprojects.in/contact",
+          "telephone": "+91-9925186661",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "210, Arved Transcube Mall, Bandhu Nagar, Vijay Nagar, Ranip",
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "postalCode": "382480",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 23.0725514,
+            "longitude": 72.5762463
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:30",
+            "closes": "18:30"
+          }
+        }}
       />
       
       {/* Top Section: Form */}

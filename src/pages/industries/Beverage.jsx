@@ -11,37 +11,37 @@ const Beverage = () => {
       id: "01",
       name: "Syrup Blending Tanks",
       description: "Jacketed stainless steel blending tanks (CAP - 2000 LTR) for the precise formulation and preparation of beverage syrups.",
-      image: "/images/beverage-blending.jpg"
+      image: "/images/beverage-blending.webp"
     },
     {
       id: "02",
       name: "Flavor Emulsification",
       description: "Vacuum emulsification vessels (Step-02) engineered to perfectly mix and homogenize diverse fruit flavors and beverage bases.",
-      image: "/images/beverage-emulsification.jpg"
+      image: "/images/beverage-emulsification.webp"
     },
     {
       id: "03",
       name: "Pasteurization Systems",
       description: "Advanced tube holding and pasteurization units that rapidly heat-treat beverages to ensure extended shelf-life and absolute safety.",
-      image: "/images/beverage-pasteurization.jpg"
+      image: "/images/beverage-pasteurization.webp"
     },
     {
       id: "04",
       name: "Automatic Liquid Filling",
       description: "High-speed rotary filling machines precisely dispensing flavored drinks into PET bottles with zero spillage.",
-      image: "/images/beverage-filling.jpg"
+      image: "/images/beverage-filling.webp"
     },
     {
       id: "05",
       name: "Capping & Labeling",
       description: "Integrated automated capping stations and precision labeling lines (Step-05) ensuring flawless bottle presentation.",
-      image: "/images/beverage-capping.jpg"
+      image: "/images/beverage-capping.webp"
     },
     {
       id: "06",
       name: "Shrink Wrapping & Packaging",
       description: "End-of-line packaging automation with shrink tunnels that tightly bundle multiple bottles into ready-to-ship retail packs.",
-      image: "/images/beverage-shrink.jpg"
+      image: "/images/beverage-shrink.webp"
     }
   ];
 
@@ -55,7 +55,7 @@ const Beverage = () => {
       
       {/* Hero Section */}
       <section className="relative pt-52 pb-44 bg-[#0B1F35] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/beverage-hero-bg.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('/images/beverage-hero-bg.webp')] bg-cover bg-center opacity-50"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F47A20]/30 to-transparent"></div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
@@ -158,7 +158,7 @@ const Beverage = () => {
                 <motion.img 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
-                  src="/images/beverage-overview.jpg" 
+                  src="/images/beverage-overview.webp" 
                   alt="Beverage Plant Operations" 
                   className="w-full h-auto rounded-2xl object-cover"
                 />

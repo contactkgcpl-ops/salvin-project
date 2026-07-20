@@ -11,37 +11,37 @@ const ChemicalAndAPI = () => {
       id: "01",
       name: "SS Reaction Vessels",
       description: "High-grade stainless steel reactors (R-105) designed for complex chemical syntheses with precise temperature and pressure controls.",
-      image: "/images/chemical-ss-reactor.jpg"
+      image: "/images/chemical-ss-reactor.webp"
     },
     {
       id: "02",
       name: "Industrial Centrifuges",
       description: "Heavy-duty separation systems (C-500) for the rapid and safe extraction of solid API crystals from liquid solvents.",
-      image: "/images/chemical-centrifuge.jpg"
+      image: "/images/chemical-centrifuge.webp"
     },
     {
       id: "03",
       name: "Glass-Lined Reactors",
       description: "Highly chemical-resistant glass-lined steel reactors (GLR-101) engineered to handle highly corrosive acids at extreme temperatures.",
-      image: "/images/chemical-glr.jpg"
+      image: "/images/chemical-glr.webp"
     },
     {
       id: "04",
       name: "Vacuum Tray Dryers (VTD)",
       description: "Thermal-efficient drying systems operating under vacuum to safely extract moisture from heat-sensitive chemical compounds.",
-      image: "/images/chemical-vtd.jpg"
+      image: "/images/chemical-vtd.webp"
     },
     {
       id: "05",
       name: "Flash Vessels & Separation",
       description: "Integrated flash vessels (V-201) and storage tanks designed for optimal phase separation and continuous API processing.",
-      image: "/images/chemical-flash-vessel.jpg"
+      image: "/images/chemical-flash-vessel.webp"
     },
     {
       id: "06",
       name: "Solvents & Reagents Handling",
       description: "Automated dosing and handling systems for hazardous solvents (Toluene, Methanol, Caustic Soda) ensuring absolute plant safety.",
-      image: "/images/chemical-handling.jpg"
+      image: "/images/chemical-handling.webp"
     }
   ];
 
@@ -55,7 +55,7 @@ const ChemicalAndAPI = () => {
       
       {/* Hero Section */}
       <section className="relative pt-52 pb-44 bg-[#0B1F35] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/chemical-hero-bg.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('/images/chemical-hero-bg.webp')] bg-cover bg-center opacity-50"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F47A20]/30 to-transparent"></div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
@@ -158,7 +158,7 @@ const ChemicalAndAPI = () => {
                 <motion.img 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
-                  src="/images/chemical-overview.jpg" 
+                  src="/images/chemical-overview.webp" 
                   alt="Chemical Plant Operations" 
                   className="w-full h-auto rounded-2xl object-cover"
                 />

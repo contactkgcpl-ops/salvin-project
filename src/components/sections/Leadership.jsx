@@ -21,7 +21,7 @@ const Leadership = () => {
               <div className="absolute top-8 left-8 right-[-32px] bottom-[-32px] border-[3px] border-[#F47A20] rounded-2xl -z-10 rounded-br-[60px] transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2"></div>
               
               <img 
-                src="/director.jpg" 
+                src="/director.webp" 
                 alt="Er. Keval Gandhi - Director" 
                 className="w-full h-auto rounded-2xl shadow-xl object-cover relative z-10 bg-gray-100 transition-transform duration-700 group-hover:scale-105"
               />

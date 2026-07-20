@@ -11,37 +11,37 @@ const FoodAndSpices = () => {
       id: "01",
       name: "Quality Control & Testing",
       description: "Rigorous laboratory testing for spices and food products to ensure consistency, purity, and compliance with food safety standards.",
-      image: "/images/food-equip-qc.png"
+      image: "/images/food-equip-qc.webp"
     },
     {
       id: "02",
       name: "Raw Material Conveying",
       description: "Hygienic stainless steel conveyor systems for safe, automated transport and sorting of raw food ingredients like chilies.",
-      image: "/images/food-equip-conveyor.jpg"
+      image: "/images/food-equip-conveyor.webp"
     },
     {
       id: "03",
       name: "Rotary Roasting Systems",
       description: "Continuous rotary roasters with precise temperature profiles designed for optimal roasting of seeds, spices, and grains.",
-      image: "/images/food-equip-roaster.jpg"
+      image: "/images/food-equip-roaster.webp"
     },
     {
       id: "04",
       name: "Vacuum Extruder Press",
       description: "Advanced vacuum extruder systems for the automated, continuous production of high-quality pasta, noodles, and extruded snacks.",
-      image: "/images/food-equip-extruder.jpg"
+      image: "/images/food-equip-extruder.webp"
     },
     {
       id: "05",
       name: "Latex Spray Washers",
       description: "Specialized high-pressure spray washing and cleaning lines tailored for delicate operations like jackfruit canning and retort processing.",
-      image: "/images/food-equip-washer.jpg"
+      image: "/images/food-equip-washer.webp"
     },
     {
       id: "06",
       name: "Automated FFS Packaging",
       description: "High-speed Vertical Form-Fill-Seal (VFFS) packaging machines for accurate weighing and packing of powdered spices and granular food.",
-      image: "/images/food-equip-pkg.jpg"
+      image: "/images/food-equip-pkg.webp"
     }
   ];
 
@@ -55,7 +55,7 @@ const FoodAndSpices = () => {
       
       {/* Hero Section */}
       <section className="relative pt-52 pb-44 bg-[#0B1F35] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/food-plant-hero-bg-new.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('/images/food-plant-hero-bg-new.webp')] bg-cover bg-center opacity-50"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F47A20]/30 to-transparent"></div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
@@ -158,7 +158,7 @@ const FoodAndSpices = () => {
                 <motion.img 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
-                  src="/images/service-food-processing.jpg" 
+                  src="/images/service-food-processing.webp" 
                   alt="Process Flow Diagram" 
                   className="w-full h-auto rounded-2xl object-cover"
                 />

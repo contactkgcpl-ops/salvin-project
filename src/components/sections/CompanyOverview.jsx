@@ -20,7 +20,7 @@ const CompanyOverview = () => {
               className="relative z-10 shadow-2xl rounded-xl overflow-hidden"
             >
               <img 
-                src="/images/food-plant.jpg" 
+                src="/images/food-plant.webp" 
                 alt="Salvin Industrial Plant Machinery" 
                 className="w-full h-auto block hover:scale-105 transition-transform duration-700"
               />

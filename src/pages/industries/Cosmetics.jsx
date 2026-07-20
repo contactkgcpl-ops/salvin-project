@@ -11,37 +11,37 @@ const Cosmetics = () => {
       id: "01",
       name: "Raw Material Preparation",
       description: "Automated preparation tanks for precisely weighing, mixing, and melting raw ingredients like glycerin, stearic acid, and oils.",
-      image: "/images/cosmetics-raw.jpg"
+      image: "/images/cosmetics-raw.webp"
     },
     {
       id: "02",
       name: "Vacuum Emulsification",
       description: "Advanced vacuum homogenizers (Step-02) engineered to create perfectly smooth, bubble-free face creams and lotions.",
-      image: "/images/cosmetics-emulsification.jpg"
+      image: "/images/cosmetics-emulsification.webp"
     },
     {
       id: "03",
       name: "High-Speed Cream Mixers",
       description: "High-capacity cream mixers (Step-03) designed to vigorously blend high-viscosity gels, night creams, and body scrubs.",
-      image: "/images/cosmetics-mixer.jpg"
+      image: "/images/cosmetics-mixer.webp"
     },
     {
       id: "04",
       name: "Automatic Filling Machines",
       description: "High-precision rotary filling systems (Step-04) for hygienically dispensing serums, face washes, and lotions into bottles.",
-      image: "/images/cosmetics-filling.jpg"
+      image: "/images/cosmetics-filling.webp"
     },
     {
       id: "05",
       name: "Bottle Capping & Labeling",
       description: "Automated high-speed capping and wrap-around labeling lines (Step-05) for flawless presentation of cosmetic bottles.",
-      image: "/images/cosmetics-capping.jpg"
+      image: "/images/cosmetics-capping.webp"
     },
     {
       id: "06",
       name: "Turnkey Plant Integration",
       description: "Complete manufacturing integration connecting emulsification tanks to final packaging conveyors for continuous production.",
-      image: "/images/cosmetics-turnkey.jpg"
+      image: "/images/cosmetics-turnkey.webp"
     }
   ];
 
@@ -55,7 +55,7 @@ const Cosmetics = () => {
       
       {/* Hero Section */}
       <section className="relative pt-52 pb-44 bg-[#0B1F35] overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/cosmetics-hero-bg.png')] bg-cover bg-center opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('/images/cosmetics-hero-bg.webp')] bg-cover bg-center opacity-50"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F35]/80 via-[#0B1F35]/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F47A20]/30 to-transparent"></div>
         <div className="container mx-auto px-6 md:px-12 relative z-10 text-center">
@@ -158,7 +158,7 @@ const Cosmetics = () => {
                 <motion.img 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.4 }}
-                  src="/images/cosmetics-overview.jpg" 
+                  src="/images/cosmetics-overview.webp" 
                   alt="Cosmetics Plant Operations" 
                   className="w-full h-auto rounded-2xl object-cover"
                 />

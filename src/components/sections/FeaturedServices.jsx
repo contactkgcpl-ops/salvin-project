@@ -8,7 +8,7 @@ const FeaturedServices = () => {
     {
       title: "Complete Plant Setup",
       description: "We handle the entire process of building your new factory from the ground up. From the initial layout design to manufacturing the machines and final testing, we do it all.",
-      image: "/images/service-plant-setup.jpg",
+      image: "/images/service-plant-setup.webp",
       features: ["Start to Finish Setup", "Custom Machine Design", "Full Responsibility"]
     },
     {
@@ -20,13 +20,13 @@ const FeaturedServices = () => {
     {
       title: "Pharma & Medicine Plants",
       description: "We set up complete manufacturing plants for medicines and pharmaceuticals, ensuring everything is highly hygienic and completely safe.",
-      image: "/images/pharma-plant.png",
+      image: "/images/pharma-plant.webp",
       features: ["Hygienic Setup", "Complete Automation", "Safe Production"]
     },
     {
       title: "Cosmetic & Chemical Factories",
       description: "From creams and lotions to industrial chemicals, we build the perfect factories and machines for your specific products.",
-      image: "/images/complete-plant-setup.png",
+      image: "/images/complete-plant-setup.webp",
       features: ["Custom Machines", "Fast Production", "High Quality"]
     },
     {
