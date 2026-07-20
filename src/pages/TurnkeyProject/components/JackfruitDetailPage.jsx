@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './JackfruitDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -100,10 +101,7 @@ export default function JackfruitDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Jackfruit Canning & Retort Line | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Jackfruit Canning & Retort Line by Salvin Industries. From raw fruit reception to retort sterilization — automated, food-grade processing lines.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -133,6 +131,10 @@ export default function JackfruitDetailPage() {
 
   return (
     <div className="jcp-page">
+      <SEO 
+        title="Jackfruit Canning & Retort Line | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Jackfruit Canning & Retort Line by Salvin Industries. From raw fruit reception to retort sterilization — automated, food-grade processing lines."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="jcp-hero">

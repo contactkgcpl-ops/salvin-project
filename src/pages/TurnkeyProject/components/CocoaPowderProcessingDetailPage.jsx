@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './CocoaPowderProcessingDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function CocoaPowderProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Cocoa Powder Processing System | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for cocoa bean roasting, winnowing, grinding, pulverizing, sieving, and packaging to produce premium quality cocoa powder.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function CocoaPowderProcessingDetailPage() {
 
   return (
     <div className="cpp-page">
+      <SEO 
+        title="Complete Cocoa Powder Processing System | Salvin Industries"
+        description="Advanced turnkey solution for cocoa bean roasting, winnowing, grinding, pulverizing, sieving, and packaging to produce premium quality cocoa powder."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="cpp-hero">

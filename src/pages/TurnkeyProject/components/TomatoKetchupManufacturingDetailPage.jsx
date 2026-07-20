@@ -96,10 +96,7 @@ export default function TomatoKetchupManufacturingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Tomato Ketchup Manufacturing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for tomato washing, inspection, pulping, cooking, homogenization, filling, and packaging to produce premium quality tomato ketchup.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +126,10 @@ export default function TomatoKetchupManufacturingDetailPage() {
 
   return (
     <div className="tkm-page">
+      <SEO 
+        title="Complete Tomato Ketchup Manufacturing Plant | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for tomato washing, inspection, pulping, cooking, homogenization, filling, and packaging to produce premium quality tomato ketchup."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="tkm-hero">

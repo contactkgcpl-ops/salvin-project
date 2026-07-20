@@ -96,10 +96,7 @@ export default function EdibleOilProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Edible Oil Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'The Edible Oil Processing Plant is a complete turnkey solution for producing high-quality refined edible oils from various oilseeds.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +126,10 @@ export default function EdibleOilProcessingDetailPage() {
 
   return (
     <div className="eop-page">
+      <SEO 
+        title="Complete Edible Oil Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="The Edible Oil Processing Plant is a complete turnkey solution for producing high-quality refined edible oils from various oilseeds."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="eop-hero">

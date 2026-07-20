@@ -25,27 +25,43 @@ const slides = [
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [prevSlide, setPrevSlide] = useState(slides.length - 1);
 
   useEffect(() => {
     const timer = setInterval(() => {
+      setPrevSlide(currentSlide);
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [currentSlide]);
+
+  const handleManualSlide = (idx) => {
+    if (idx !== currentSlide) {
+      setPrevSlide(currentSlide);
+      setCurrentSlide(idx);
+    }
+  };
 
   return (
     <section className="relative h-auto min-h-[100svh] md:min-h-[600px] md:h-[85vh] w-full bg-white flex items-start md:items-center overflow-hidden">
       
       {/* Inject custom CSS for responsive clip path */}
       <style>{`
-        .hero-clip { clip-path: none; }
+        .hero-clip { 
+          clip-path: none; 
+          transform: translateZ(0); 
+          will-change: transform, opacity; 
+          backface-visibility: hidden; 
+        }
         @media (min-width: 768px) {
-          .hero-clip { clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); }
+          .hero-clip { 
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); 
+          }
         }
       `}</style>
 
       {/* Left Content Area */}
-      <div className="relative z-20 w-full lg:w-[50%] px-6 md:px-12 lg:pl-24 flex flex-col justify-center h-auto md:h-full pt-12 pb-[40vh] md:pt-0 md:pb-0">
+      <div className="relative z-20 w-full lg:w-[50%] px-6 md:px-12 lg:pl-24 flex flex-col justify-center h-auto md:h-full pt-12 pb-[320px] md:pt-0 md:pb-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${currentSlide}`}
@@ -92,27 +108,29 @@ const Hero = () => {
       {/* Right Image Area with Diagonal Split on Desktop */}
       {/* Background Accent Layer (Blue top half, Green bottom half) */}
       <div 
-        className="absolute bottom-0 md:top-0 right-0 h-[38vh] md:h-full w-full md:w-[70%] lg:w-[60%] z-0 bg-gradient-to-b from-[#0B1F35] from-[50%] to-[#64C240] to-[50%] hero-clip"
+        className="absolute bottom-0 md:top-0 right-0 h-[300px] md:h-full w-full md:w-[70%] lg:w-[60%] z-0 bg-gradient-to-b from-[#0B1F35] from-[50%] to-[#64C240] to-[50%] hero-clip"
       ></div>
 
       {/* Image Layer */}
       <div 
-        className="absolute bottom-0 md:top-0 right-0 h-[38vh] md:h-full w-full md:w-[70%] lg:w-[60%] z-10 translate-x-0 md:translate-x-[16px] hero-clip border-t-[6px] border-[#64C240] md:border-t-0"
+        className="absolute bottom-0 md:top-0 right-0 h-[300px] md:h-full w-full md:w-[70%] lg:w-[60%] z-10 translate-x-0 md:translate-x-[16px] hero-clip border-t-[6px] border-[#64C240] md:border-t-0"
       >
-        <AnimatePresence initial={false}>
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, zIndex: 10 }}
-            animate={{ opacity: 1, zIndex: 10 }}
-            exit={{ opacity: 0.99, zIndex: 0 }}
-            transition={{ 
-              opacity: { duration: 1.2, ease: "easeInOut" },
-              zIndex: { duration: 0 }
-            }}
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url("${slides[currentSlide].image}")` }}
-          />
-        </AnimatePresence>
+        {slides.map((slide, index) => {
+          const isCurrent = currentSlide === index;
+          const isPrev = prevSlide === index;
+          // Only animate the new slide fading in, keep prev slide visible underneath
+          return (
+            <div
+              key={index}
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+              style={{ 
+                backgroundImage: `url("${slide.image}")`,
+                opacity: isCurrent || isPrev ? 1 : 0,
+                zIndex: isCurrent ? 10 : (isPrev ? 5 : 0)
+              }}
+            />
+          );
+        })}
       </div>
 
       {/* Optional Slider Dots for manual navigation */}
@@ -120,7 +138,7 @@ const Hero = () => {
         {slides.map((_, idx) => (
           <button
             key={idx}
-            onClick={() => setCurrentSlide(idx)}
+            onClick={() => handleManualSlide(idx)}
             className={`w-12 h-2 transition-colors ${currentSlide === idx ? 'bg-[#0B1F35]' : 'bg-gray-300'}`}
             aria-label={`Go to slide ${idx + 1}`}
           />

@@ -104,11 +104,11 @@ const Footer = () => {
           
           {/* Left: Big Text */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-[#1f1f1f] leading-none tracking-tight">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-bold text-[#1f1f1f] leading-none tracking-tight">
               LET'S<br/>
               BUILD<br/>
               TOGETHER
-            </h1>
+            </h2>
           </div>
 
           {/* Right: Company Contact */}

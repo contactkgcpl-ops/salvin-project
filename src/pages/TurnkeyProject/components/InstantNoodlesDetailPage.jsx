@@ -1,5 +1,6 @@
 import WhyChooseSalvin from './WhyChooseSalvin';
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './MayonnaiseProcessingDetailPage.css'
 
@@ -106,10 +107,7 @@ export default function InstantNoodlesDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Instant Noodles Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Instant Noodles Processing Plant by Salvin Industries. Fully automated food-grade processing lines for high-efficiency noodle production.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -139,6 +137,10 @@ export default function InstantNoodlesDetailPage() {
 
   return (
     <div className="mpp-page">
+      <SEO 
+        title="Instant Noodles Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Instant Noodles Processing Plant by Salvin Industries. Fully automated food-grade processing lines for high-efficiency noodle production."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="mpp-hero">

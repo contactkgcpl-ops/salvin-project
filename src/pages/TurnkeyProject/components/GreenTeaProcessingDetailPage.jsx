@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './GreenTeaProcessingDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function GreenTeaProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Green Tea Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for green tea leaf sorting, withering, steaming, rolling, drying, and packaging to produce premium quality green tea.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function GreenTeaProcessingDetailPage() {
 
   return (
     <div className="gtp-page">
+      <SEO 
+        title="Complete Green Tea Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for green tea leaf sorting, withering, steaming, rolling, drying, and packaging to produce premium quality green tea."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="gtp-hero">

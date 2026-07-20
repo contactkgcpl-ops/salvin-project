@@ -41,9 +41,9 @@ const EngineeringProcess = () => {
           {/* Connecting Line */}
           <div className="hidden lg:block absolute top-[40px] left-0 w-full h-[2px] bg-gray-200">
             <motion.div 
-              className="h-full bg-[#F47A20]"
-              initial={{ width: 0 }}
-              whileInView={{ width: '100%' }}
+              className="h-full w-full bg-[#F47A20] origin-left"
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             ></motion.div>

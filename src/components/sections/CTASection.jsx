@@ -8,7 +8,7 @@ const CTASection = () => {
     <section className="relative py-32 overflow-hidden">
       {/* Background Image & Overlay */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: 'url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
         }}

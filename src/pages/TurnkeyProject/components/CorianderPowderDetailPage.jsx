@@ -96,10 +96,7 @@ export default function CorianderPowderDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Coriander Powder Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'The Coriander Powder Plant is a complete turnkey solution for producing premium-quality coriander powder.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +126,10 @@ export default function CorianderPowderDetailPage() {
 
   return (
     <div className="cpp-page">
+      <SEO 
+        title="Complete Coriander Powder Plant | Turnkey Solutions | Salvin Industries"
+        description="The Coriander Powder Plant is a complete turnkey solution for producing premium-quality coriander powder."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="cpp-hero">

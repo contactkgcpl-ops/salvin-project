@@ -98,13 +98,6 @@ export default function LiquidGlucoseDetailPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  // SEO meta (separate from scroll to avoid coupling with re-renders)
-  useEffect(() => {
-    document.title = 'Liquid Glucose Manufacturing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Liquid Glucose Manufacturing Plant by Salvin Industries. Advanced turnkey solution for starch slurry preparation, liquefaction, saccharification, filtration, evaporation, and packaging for high-quality liquid glucose production.')
-  }, [])
-
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -133,6 +126,10 @@ export default function LiquidGlucoseDetailPage() {
 
   return (
     <div className="lgp-page">
+      <SEO 
+        title="Liquid Glucose Manufacturing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Liquid Glucose Manufacturing Plant by Salvin Industries. Advanced turnkey solution for starch slurry preparation, liquefaction, saccharification, filtration, evaporation, and packaging for high-quality liquid glucose production."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="lgp-hero">

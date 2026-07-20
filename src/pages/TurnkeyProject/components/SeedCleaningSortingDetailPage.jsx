@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './SeedCleaningSortingDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function SeedCleaningSortingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Seed Cleaning & Sorting Solution | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for seed pre-cleaning, sorting, destoning, gravity separation, grading, and packaging to ensure premium seed quality and high processing efficiency.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function SeedCleaningSortingDetailPage() {
 
   return (
     <div className="scs-page">
+      <SEO 
+        title="Complete Seed Cleaning & Sorting Solution | Salvin Industries"
+        description="Advanced turnkey solution for seed pre-cleaning, sorting, destoning, gravity separation, grading, and packaging to ensure premium seed quality and high processing efficiency."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="scs-hero">

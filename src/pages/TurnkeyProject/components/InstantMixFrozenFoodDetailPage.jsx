@@ -97,10 +97,7 @@ export default function InstantMixFrozenFoodDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Instant Mix & Frozen Food Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Instant Mix & Frozen Food Processing Plant by Salvin Industries. Fully automated food-grade processing lines for protein bars, energy bars, and nutrition bars.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -130,6 +127,10 @@ export default function InstantMixFrozenFoodDetailPage() {
 
   return (
     <div className="imff-page">
+      <SEO 
+        title="Instant Mix & Frozen Food Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Instant Mix & Frozen Food Processing Plant by Salvin Industries. Fully automated food-grade processing lines for protein bars, energy bars, and nutrition bars."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="imff-hero">

@@ -99,13 +99,6 @@ export default function PeanutButterDetailPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  // SEO meta (separate from scroll to avoid coupling with re-renders)
-  useEffect(() => {
-    document.title = 'Peanut Butter Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Peanut Butter Processing Plant by Salvin Industries. Automated, food-grade processing lines for smooth and crunchy peanut butter.')
-  }, [])
-
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -134,6 +127,10 @@ export default function PeanutButterDetailPage() {
 
   return (
     <div className="pbp-page">
+      <SEO 
+        title="Peanut Butter Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Peanut Butter Processing Plant by Salvin Industries. Automated, food-grade processing lines for smooth and crunchy peanut butter."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="pbp-hero">

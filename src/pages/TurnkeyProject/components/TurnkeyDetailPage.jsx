@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useParams, NavLink } from 'react-router-dom'
+import SEO from '../../../components/SEO'
 import { getProjectDetails } from '../data/turnkeyProjectsData'
 import { PackageSearch, CookingPot, Factory, Stamp, Flame, Snowflake, Package, FlaskConical, Utensils, Scissors, Hammer, Wind, Layers, ScanSearch, Cpu, Wifi, Bot, Eye, QrCode, BarChart3 } from 'lucide-react'
 import './RedChilliDetailPage.css' // Reuse the master layout stylesheet
@@ -504,18 +505,7 @@ export default function TurnkeyDetailPage() {
     window.scrollTo(0, 0)
   }, [projectSlug])
 
-  // SEO meta
-  useEffect(() => {
-    if (!details) return
-    document.title = `${details.title} | Turnkey Solutions | Salvin Industries`
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        `Complete turnkey ${details.title} by Salvin Industries. Automated, food-grade, energy-efficient processing and packaging lines from small to large scale.`
-      )
-    }
-  }, [details, projectSlug])
+  // SEO meta handled by <SEO> component
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -568,6 +558,11 @@ export default function TurnkeyDetailPage() {
 
   return (
     <div className="rcp-page">
+      <SEO 
+        title={`${details.title} | Salvin Projects`} 
+        description={details.seoDescription || details.overview?.description[0]} 
+      />
+      
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero" >
         <div className="rcp-hero__overlay" />

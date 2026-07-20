@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './PeanutOilMillDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function PeanutOilMillDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Peanut Oil Mill Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for producing high-quality edible peanut oil with maximum extraction efficiency.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function PeanutOilMillDetailPage() {
 
   return (
     <div className="pom-page">
+      <SEO 
+        title="Complete Peanut Oil Mill Plant | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for producing high-quality edible peanut oil with maximum extraction efficiency."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="pom-hero">

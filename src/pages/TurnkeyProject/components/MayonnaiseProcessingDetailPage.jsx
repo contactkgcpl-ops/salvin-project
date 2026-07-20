@@ -106,10 +106,7 @@ export default function MayonnaiseProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Mayonnaise Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Mayonnaise Processing Plant by Salvin Industries. Fully automated food-grade processing lines for protein bars, energy bars, and nutrition bars.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -139,6 +136,10 @@ export default function MayonnaiseProcessingDetailPage() {
 
   return (
     <div className="mpp-page">
+      <SEO 
+        title="Mayonnaise Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Mayonnaise Processing Plant by Salvin Industries. Fully automated food-grade processing lines for protein bars, energy bars, and nutrition bars."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="mpp-hero">

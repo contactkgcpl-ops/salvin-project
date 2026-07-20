@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './BlackPepperDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function BlackPepperDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Black Pepper Powder Processing Solution | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for cleaning, sorting, roasting, pulverizing, sieving, and packaging black pepper powder with consistent quality and high production efficiency.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function BlackPepperDetailPage() {
 
   return (
     <div className="bpp-page">
+      <SEO 
+        title="Complete Black Pepper Powder Processing Solution | Salvin Industries"
+        description="Advanced turnkey solution for cleaning, sorting, roasting, pulverizing, sieving, and packaging black pepper powder with consistent quality and high production efficiency."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="bpp-hero">

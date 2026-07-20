@@ -96,10 +96,7 @@ export default function PizzaSauceProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Pizza Sauce Processing Solution | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for ingredient inspection, tomato dicing, pulp refining, homogenization, blending, seasoning, filling, capping, and labelling to produce premium quality pizza sauce.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +126,10 @@ export default function PizzaSauceProcessingDetailPage() {
 
   return (
     <div className="psp-page">
+      <SEO 
+        title="Complete Pizza Sauce Processing Solution | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for ingredient inspection, tomato dicing, pulp refining, homogenization, blending, seasoning, filling, capping, and labelling to produce premium quality pizza sauce."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="psp-hero">

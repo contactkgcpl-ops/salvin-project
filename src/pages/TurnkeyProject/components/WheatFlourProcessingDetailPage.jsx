@@ -96,10 +96,7 @@ export default function WheatFlourProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Wheat Flour Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'The Wheat Flour Processing Plant is a complete turnkey solution for producing premium-quality wheat flour products.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +126,10 @@ export default function WheatFlourProcessingDetailPage() {
 
   return (
     <div className="wfp-page">
+      <SEO 
+        title="Complete Wheat Flour Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="The Wheat Flour Processing Plant is a complete turnkey solution for producing premium-quality wheat flour products."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="wfp-hero">

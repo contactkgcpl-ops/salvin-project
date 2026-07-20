@@ -96,10 +96,7 @@ export default function IndustrialFlourMillingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Industrial Flour Milling Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for industrial flour milling, integrating cleaning, conditioning, roller milling, and packaging to produce premium quality flour.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +126,10 @@ export default function IndustrialFlourMillingDetailPage() {
 
   return (
     <div className="ifm-page">
+      <SEO 
+        title="Complete Industrial Flour Milling Plant | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for industrial flour milling, integrating cleaning, conditioning, roller milling, and packaging to produce premium quality flour."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="ifm-hero">

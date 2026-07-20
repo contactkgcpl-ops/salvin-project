@@ -101,10 +101,7 @@ export default function ProteinBarManufacturingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Protein Bar Manufacturing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Protein Bar Manufacturing Plant by Salvin Industries. Fully automated food-grade processing lines for protein bars, energy bars, and nutrition bars.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -134,6 +131,10 @@ export default function ProteinBarManufacturingDetailPage() {
 
   return (
     <div className="pbm-page">
+      <SEO 
+        title="Protein Bar Manufacturing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Protein Bar Manufacturing Plant by Salvin Industries. Fully automated food-grade processing lines for protein bars, energy bars, and nutrition bars."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="pbm-hero">

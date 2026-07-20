@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './GingerGarlicPasteDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -97,10 +98,7 @@ export default function GingerGarlicPasteDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Ginger Garlic Paste Processing Plant Solution | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Salvin Industries\' Ginger Garlic Paste Processing Plant is a fully integrated turnkey solution designed for hygienic processing of fresh ginger and garlic into premium quality paste.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -130,6 +128,10 @@ export default function GingerGarlicPasteDetailPage() {
 
   return (
     <div className="ggp-page">
+      <SEO 
+        title="Complete Ginger Garlic Paste Processing Plant Solution | Salvin Industries"
+        description="Salvin Industries\' Ginger Garlic Paste Processing Plant is a fully integrated turnkey solution designed for hygienic processing of fresh ginger and garlic into premium quality paste."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="ggp-hero">

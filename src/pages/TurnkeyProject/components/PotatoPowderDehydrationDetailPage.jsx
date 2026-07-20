@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './PotatoPowderDehydrationDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function PotatoPowderDehydrationDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Potato Powder Dehydration Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for potato washing, peeling, slicing, dehydration, pulverizing, sieving, and packaging to produce premium quality potato powder.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function PotatoPowderDehydrationDetailPage() {
 
   return (
     <div className="ppd-page">
+      <SEO 
+        title="Complete Potato Powder Dehydration Plant | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for potato washing, peeling, slicing, dehydration, pulverizing, sieving, and packaging to produce premium quality potato powder."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="ppd-hero">

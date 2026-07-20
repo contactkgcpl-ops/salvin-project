@@ -98,13 +98,6 @@ export default function PastaNoodlesDetailPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  // SEO meta (separate from scroll to avoid coupling with re-renders)
-  useEffect(() => {
-    document.title = 'Pasta & Noodles Production Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Pasta & Noodles Production Plant by Salvin Industries. From raw pasta receiving to finished packaging — automated, food-grade processing lines.')
-  }, [])
-
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -133,6 +126,10 @@ export default function PastaNoodlesDetailPage() {
 
   return (
     <div className="pnp-page">
+      <SEO 
+        title="Pasta & Noodles Production Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Pasta & Noodles Production Plant by Salvin Industries. From raw pasta receiving to finished packaging — automated, food-grade processing lines."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="pnp-hero">

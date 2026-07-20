@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './RedChilliDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -98,13 +99,6 @@ export default function RedChilliDetailPage() {
     window.scrollTo(0, 0)
   }, [])
 
-  // SEO meta (separate from scroll to avoid coupling with re-renders)
-  useEffect(() => {
-    document.title = 'Red Chilli Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Complete turnkey Red Chilli Processing Plant by Salvin Industries. From raw chilli receiving to finished powder packaging — automated, food-grade, energy-efficient processing lines from 500 Kg/Hr to 5 Ton/Hr.')
-  }, [])
-
   // Intersection Observer for scroll animations
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -133,6 +127,10 @@ export default function RedChilliDetailPage() {
 
   return (
     <div className="rcp-page">
+      <SEO 
+        title="Red Chilli Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Complete turnkey Red Chilli Processing Plant by Salvin Industries. From raw chilli receiving to finished powder packaging — automated, food-grade, energy-efficient processing lines from 500 Kg/Hr to 5 Ton/Hr."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero">

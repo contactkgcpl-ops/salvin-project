@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SEO from '../../../components/SEO';
 import { NavLink } from 'react-router-dom'
 import './CoffeeProcessingDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
@@ -96,10 +97,7 @@ export default function CoffeeProcessingDetailPage() {
 
   // SEO meta
   useEffect(() => {
-    document.title = 'Complete Coffee Processing Plant | Turnkey Solutions | Salvin Industries'
-    const metaDesc = document.querySelector('meta[name="description"]')
-    if (metaDesc) metaDesc.setAttribute('content', 'Advanced turnkey solution for coffee bean cleaning, roasting, cooling, grinding, blending, storage, and packaging to produce premium quality coffee powder.')
-  }, [])
+    }, [])
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -129,6 +127,10 @@ export default function CoffeeProcessingDetailPage() {
 
   return (
     <div className="cp-page">
+      <SEO 
+        title="Complete Coffee Processing Plant | Turnkey Solutions | Salvin Industries"
+        description="Advanced turnkey solution for coffee bean cleaning, roasting, cooling, grinding, blending, storage, and packaging to produce premium quality coffee powder."
+      />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="cp-hero">
