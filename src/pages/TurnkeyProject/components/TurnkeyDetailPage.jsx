@@ -653,7 +653,7 @@ export default function TurnkeyDetailPage() {
               </div>
             </div>
             <div className={`rcp-overview__image ${details.overview?.isBrochure ? 'rcp-overview__image--brochure' : 'rcp-overview__image--photo'}`}>
-              <img src={details.overview.photoImage || details.overview.image} alt={`${details.title} by Salvin Industries`} loading="lazy" style={details.overview?.isBrochure ? { objectFit: 'contain', background: '#fff' } : undefined} />
+              <img src={details.overview?.photoImage || details.overview?.image} alt={`${details.title} by Salvin Industries`} loading="lazy" style={details.overview?.isBrochure ? { objectFit: 'contain', background: '#fff' } : undefined} />
             </div>
           </div>
         </div>
@@ -668,7 +668,7 @@ export default function TurnkeyDetailPage() {
             <p className="rcp-section-subtitle">A streamlined and fully integrated processing workflow designed to transform raw materials into premium-quality finished products while ensuring maximum efficiency, product consistency and superior output quality.</p>
 
             <div className="rcp-process-flow-container">
-              {processSteps.map((step, i) => (
+              {(processSteps || []).map((step, i) => (
                 <React.Fragment key={step.id}>
                   <div className="rcp-process-card">
                     <div className="rcp-process-card__icon">
@@ -697,7 +697,7 @@ export default function TurnkeyDetailPage() {
             <div className="rcp-section-badge">Machinery Used</div>
             <h2 className="rcp-section-title">Core <span className="rcp-accent">Equipment</span></h2>
             <div className="rcp-machinery__grid">
-              {details.machinery.map((m, i) => (
+              {(details.machinery || []).map((m, i) => (
                 <div key={i} className="rcp-machine-card">
                   <div className="rcp-machine-card__image-wrapper">
                     <img src={m.image} alt={m.name} className="rcp-machine-card__image" loading="lazy" />
@@ -773,7 +773,7 @@ export default function TurnkeyDetailPage() {
                 <div className="rcp-gallery__caption">{details.gallery[galleryIndex].caption}</div>
               </div>
               <div className="rcp-gallery__thumbs">
-                {details.gallery.map((img, i) => (
+                {(details.gallery || []).map((img, i) => (
                   <button
                     key={i}
                     className={`rcp-gallery__thumb ${galleryIndex === i ? 'rcp-gallery__thumb--active' : ''}`}
