@@ -560,13 +560,13 @@ export default function TurnkeyDetailPage() {
     <div className="rcp-page">
       <SEO 
         title={`${details.title} | Salvin Projects`} 
-        description={details.seoDescription || details.overview?.description[0]} 
+        description={details?.seoDescription || details?.overview?.description?.[0] || details?.overview?.p1 || "Turnkey Project"} 
       />
       
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero" >
         <div className="rcp-hero__overlay" />
-        <div className="rcp-hero__bg" style={{ backgroundImage: `url('${details.heroImage || details.overview.image}')`, ...(details.heroStyle || {}) }} />
+        <div className="rcp-hero__bg" style={{ backgroundImage: `url('${details.heroImage || details?.overview?.image}')`, ...(details.heroStyle || {}) }} />
         <div className="rcp-hero__content">
           <span className="rcp-hero__badge">
             <span className="rcp-hero__badge-dot" />
@@ -609,10 +609,10 @@ export default function TurnkeyDetailPage() {
           <h2 className="rcp-section-title">Complete <span className="rcp-accent">Processing Solution</span></h2>
           <div className="rcp-overview__grid">
             <div className="rcp-overview__text">
-              <p>{details.overview.p1}</p>
-              <p>{details.overview.p2}</p>
+              <p>{details?.overview?.p1}</p>
+              <p>{details?.overview?.p2}</p>
               <div className="rcp-overview__features">
-                {(details.overview.features4 || [
+                {(details?.overview?.features4 || [
                   { title: 'High Yield', desc: 'Maximum product recovery per batch' },
                   { title: 'Hygienic Process', desc: 'Food grade SS304/SS316L construction' },
                   { title: 'Consistent Quality', desc: 'Uniform product output every cycle' },
@@ -766,11 +766,11 @@ export default function TurnkeyDetailPage() {
             <div className="rcp-gallery__showcase">
               <div className="rcp-gallery__main">
                 <img
-                  src={details.gallery[galleryIndex].src}
-                  alt={details.gallery[galleryIndex].caption}
+                  src={(details?.gallery || [])[galleryIndex].src}
+                  alt={(details?.gallery || [])[galleryIndex].caption}
                   className="rcp-gallery__main-img"
                 />
-                <div className="rcp-gallery__caption">{details.gallery[galleryIndex].caption}</div>
+                <div className="rcp-gallery__caption">{(details?.gallery || [])[galleryIndex].caption}</div>
               </div>
               <div className="rcp-gallery__thumbs">
                 {(details.gallery || []).map((img, i) => (
