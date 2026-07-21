@@ -24,6 +24,13 @@ import InstantMixFrozenFoodDetailPage from './pages/TurnkeyProject/components/In
 import InstantNoodlesDetailPage from './pages/TurnkeyProject/components/InstantNoodlesDetailPage';
 import TurnkeyDetailPage from './pages/TurnkeyProject/components/TurnkeyDetailPage';
 
+// 5 New Projects
+import ChikkiPluckingDetailPage from './pages/TurnkeyProject/components/ChikkiPluckingDetailPage';
+import DryFruitChikkiDetailPage from './pages/TurnkeyProject/components/DryFruitChikkiDetailPage';
+import MamraPauvaDetailPage from './pages/TurnkeyProject/components/MamraPauvaDetailPage';
+import TomatoPureeDetailPage from './pages/TurnkeyProject/components/TomatoPureeDetailPage';
+import TomatoPasteDetailPage from './pages/TurnkeyProject/components/TomatoPasteDetailPage';
+
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
@@ -41,6 +48,7 @@ import Beverage from './pages/industries/Beverage';
 import Cosmetics from './pages/industries/Cosmetics';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import Careers from './pages/Careers';
 import ScrollToTop from './components/ScrollToTop';
 import { LeadProvider } from './context/LeadContext';
 import './index.css';
@@ -66,6 +74,7 @@ function App() {
           <Route path="industries/cosmetics" element={<Cosmetics />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="careers" element={<Careers />} />
           <Route path="turnkey-projects" element={<TurnkeyProjects />} />
           <Route path="turnkey-project/red-chilli-processing-plant" element={<RedChilliDetailPage />} />
           <Route path="turnkey-project/pizza-sauce-processing-plant" element={<PizzaSauceProcessingDetailPage />} />
@@ -90,6 +99,13 @@ function App() {
           <Route path="turnkey-project/mayonnaise-processing-plant" element={<MayonnaiseProcessingDetailPage />} />
           <Route path="turnkey-project/instant-mix-frozen-food-processing-plant" element={<InstantMixFrozenFoodDetailPage />} />
           <Route path="turnkey-project/instant-noodles-processing-plant" element={<InstantNoodlesDetailPage />} />
+          
+          <Route path="turnkey-project/chikki-plucking-plant" element={<ChikkiPluckingDetailPage />} />
+          <Route path="turnkey-project/dry-fruit-chikki-plant" element={<DryFruitChikkiDetailPage />} />
+          <Route path="turnkey-project/mamra-pauva-plant" element={<MamraPauvaDetailPage />} />
+          <Route path="turnkey-project/tomato-puree-plant" element={<TomatoPureeDetailPage />} />
+          <Route path="turnkey-project/tomato-paste-plant" element={<TomatoPasteDetailPage />} />
+
           <Route path="turnkey-project/:projectSlug" element={<TurnkeyDetailPage />} />
 
         </Route>

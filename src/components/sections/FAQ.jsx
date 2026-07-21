@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
@@ -77,7 +77,7 @@ const FAQ = () => {
                     {faq.question}
                   </span>
                   <span className="text-gray-400">
-                    {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                    {isOpen ? <Minus size={20} /> : <Plus size={20} />}
                   </span>
                 </button>
                 

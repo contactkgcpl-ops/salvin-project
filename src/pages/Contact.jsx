@@ -13,14 +13,18 @@ const Contact = () => {
     Subject: '',
     Message: ''
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const onSubmit = (e) => {
+    e.preventDefault();
     handleFormSubmit(e, formData, "Contact Page Form");
     setFormData({ Name: '', Company: '', Email: '', Phone: '', Subject: '', Message: '' });
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 5000);
   };
   return (
     <div className="w-full bg-[#F3F4F6] font-sans pt-32 pb-0">
@@ -73,6 +77,19 @@ const Contact = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F35] mb-4">Send Us a Message</h2>
             <p className="text-gray-600">Fill out the form below and our technical team will get back to you shortly.</p>
           </div>
+
+          {isSubmitted && (
+            <motion.div 
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 mb-8 flex items-center gap-3"
+            >
+              <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <p className="font-medium">Thank you! Your inquiry has been sent successfully. Our team will contact you soon.</p>
+            </motion.div>
+          )}
 
           <form className="space-y-6" onSubmit={onSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
