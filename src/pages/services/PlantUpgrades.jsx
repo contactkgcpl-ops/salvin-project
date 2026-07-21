@@ -1,7 +1,7 @@
 import React from 'react';
 import EngineeringProcess from '../../components/sections/EngineeringProcess';
 import WhyChooseUs from '../../components/sections/WhyChooseUs';
-import CTASection from '../../components/sections/CTASection';
+
 import SEO from '../../components/SEO';
 
 const PlantUpgrades = () => {
@@ -23,7 +23,7 @@ const PlantUpgrades = () => {
       
       <EngineeringProcess />
       <WhyChooseUs />
-      <CTASection />
+
     </div>
   );
 };

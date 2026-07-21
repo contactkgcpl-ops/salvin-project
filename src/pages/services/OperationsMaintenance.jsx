@@ -2,7 +2,7 @@ import React from 'react';
 import TrustedBy from '../../components/sections/TrustedBy';
 import WhyChooseUs from '../../components/sections/WhyChooseUs';
 import ClientReviews from '../../components/sections/ClientReviews';
-import CTASection from '../../components/sections/CTASection';
+
 import SEO from '../../components/SEO';
 
 const OperationsMaintenance = () => {
@@ -25,7 +25,7 @@ const OperationsMaintenance = () => {
       <TrustedBy />
       <WhyChooseUs />
       <ClientReviews />
-      <CTASection />
+
     </div>
   );
 };

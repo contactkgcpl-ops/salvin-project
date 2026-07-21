@@ -7,7 +7,7 @@ import Leadership from '../components/sections/Leadership';
 import IndustriesWeServe from '../components/sections/IndustriesWeServe';
 import WhyChooseUs from "../components/sections/WhyChooseUs";
 import FAQ from "../components/sections/FAQ";
-import CTASection from '../components/sections/CTASection';
+
 import SEO from '../components/SEO';
 
 const Home = () => {
@@ -45,7 +45,7 @@ const Home = () => {
       <Leadership />
       <WhyChooseUs />
       <FAQ />
-      <CTASection />
+
     </div>
   );
 };

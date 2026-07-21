@@ -9,7 +9,7 @@ const Leadership = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
           {/* Left: Image with Frame */}
-          <div className="w-full sm:w-3/4 md:w-2/3 lg:w-4/12 relative mx-auto lg:mx-0">
+          <div className="w-full sm:w-3/4 md:w-2/3 lg:w-4/12 relative mx-auto lg:mx-0 px-4 sm:px-8 py-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -18,7 +18,7 @@ const Leadership = () => {
               className="relative z-10 group"
             >
               {/* Offset Orange Frame */}
-              <div className="absolute top-8 left-8 right-[-32px] bottom-[-32px] border-[3px] border-[#F47A20] rounded-2xl -z-10 rounded-br-[60px] transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+              <div className="absolute top-6 left-6 -right-6 -bottom-6 border-[3px] border-[#F47A20] rounded-2xl -z-10 rounded-br-[60px] transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2"></div>
               
               <img 
                 src="/director.webp" 
@@ -32,8 +32,8 @@ const Leadership = () => {
               </div>
 
               {/* Name Badge */}
-              <div className="absolute -bottom-8 -left-4 sm:-left-8 bg-white rounded-xl shadow-2xl px-6 py-4 flex items-center gap-4 z-20 border border-gray-50">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
+              <div className="absolute -bottom-8 -left-4 sm:-left-8 bg-white rounded-xl shadow-2xl px-6 py-4 flex items-center gap-4 z-20 border border-gray-50 whitespace-nowrap">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                   <User className="w-5 h-5 text-blue-600" />
                 </div>
                 <span className="font-bold text-[#0B1F35] text-lg tracking-wide">Er. Keval Gandhi</span>
@@ -42,7 +42,7 @@ const Leadership = () => {
           </div>
 
           {/* Right: Content */}
-          <div className="w-full lg:w-8/12 lg:pl-8">
+          <div className="w-full lg:w-8/12 lg:pl-8 mt-8 lg:mt-0">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

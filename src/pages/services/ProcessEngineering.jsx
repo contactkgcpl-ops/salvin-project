@@ -1,7 +1,7 @@
 import React from 'react';
 import CompanyOverview from '../../components/sections/CompanyOverview';
 import ClientReviews from '../../components/sections/ClientReviews';
-import CTASection from '../../components/sections/CTASection';
+
 import SEO from '../../components/SEO';
 
 const ProcessEngineering = () => {
@@ -23,7 +23,7 @@ const ProcessEngineering = () => {
       
       <CompanyOverview />
       <ClientReviews />
-      <CTASection />
+
     </div>
   );
 };

@@ -2,7 +2,7 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import ProjectsSection from './components/ProjectsSection'
 import ProcessSection from './components/ProcessSection'
-import CTASection from './components/CTASection'
+
 
 function TurnkeyProjectPage() {
   return (
@@ -12,7 +12,7 @@ function TurnkeyProjectPage() {
         <AboutSection />
         <ProjectsSection />
         <ProcessSection />
-        <CTASection />
+
       </main>
     </div>
   )

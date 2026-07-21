@@ -2,7 +2,7 @@ import React from 'react';
 import EngineeringProcess from '../../components/sections/EngineeringProcess';
 
 import TrustedBy from '../../components/sections/TrustedBy';
-import CTASection from '../../components/sections/CTASection';
+
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Factory, Cog, Wrench, BarChart } from 'lucide-react';
 import SEO from '../../components/SEO';
@@ -28,7 +28,7 @@ const TurnkeyPlantSetup = () => {
       <EngineeringProcess />
 
       <TrustedBy />
-      <CTASection />
+
     </div>
   );
 };
