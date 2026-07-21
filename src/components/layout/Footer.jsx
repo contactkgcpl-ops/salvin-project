@@ -32,36 +32,17 @@ const Footer = () => {
 
           {/* Right: Links */}
           <div className="w-full lg:w-1/2 flex flex-col sm:flex-row justify-end lg:pl-12 gap-10 sm:gap-16">
-            {/* Services */}
-            <div>
-              <h4 className="text-gray-500 text-base mb-6">Services</h4>
-              <ul className="space-y-5">
-                {[
-                  { name: 'Turnkey Plant Setup', path: '/services/turnkey-plant-setup' },
-                  { name: 'Process Engineering', path: '/services/process-engineering' },
-                  { name: 'Industrial Automation', path: '/services/industrial-automation' },
-                  { name: 'Plant Upgrades', path: '/services/plant-upgrades' },
-                  { name: 'Operations & Maintenance', path: '/services/operations-maintenance' }
-                ].map((item, idx) => (
-                  <li key={idx}>
-                    <Link to={item.path} className="text-[15px] text-gray-300 hover:text-white transition-colors">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             {/* Industries */}
             <div>
               <h4 className="text-gray-500 text-base mb-6">Industries</h4>
               <ul className="space-y-5">
                 {[
                   { name: 'Pharmaceuticals', path: '/industries/pharmaceutical' },
-                  { name: 'Chemicals & APIs', path: '/industries/chemical-api' },
+                  { name: 'Chemicals & APIs', path: '/industries/chemical-and-api' },
                   { name: 'Beverages', path: '/industries/beverage' },
                   { name: 'Cosmetics', path: '/industries/cosmetics' },
-                  { name: 'Food & Spices', path: '/industries/food-spices' }
+                  { name: 'Food & Spices', path: '/industries/food-and-spices' },
+                  { name: 'Engineering Expertise', path: '/industries/engineering-expertise' }
                 ].map((item, idx) => (
                   <li key={idx}>
                     <Link to={item.path} className="text-[15px] text-gray-300 hover:text-white transition-colors">
@@ -78,8 +59,8 @@ const Footer = () => {
               <ul className="space-y-5">
                 {[
                   { name: 'Home', path: '/' },
-                  { name: 'Services', path: '/services/turnkey-plant-setup' },
-                  { name: 'Industries', path: '/industries/pharmaceutical' },
+                  { name: 'Services', path: '/services' },
+                  { name: 'Turnkey Projects', path: '/turnkey-projects' },
                   { name: 'Contact Us', path: '/contact' }
                 ].map((item, idx) => (
                   <li key={idx}>

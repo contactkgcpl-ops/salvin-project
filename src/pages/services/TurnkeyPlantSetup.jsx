@@ -1,6 +1,6 @@
 import React from 'react';
 import EngineeringProcess from '../../components/sections/EngineeringProcess';
-import FeaturedProjects from '../../components/sections/FeaturedProjects';
+
 import TrustedBy from '../../components/sections/TrustedBy';
 import CTASection from '../../components/sections/CTASection';
 import { motion } from 'framer-motion';
@@ -26,7 +26,7 @@ const TurnkeyPlantSetup = () => {
       </div>
       
       <EngineeringProcess />
-      <FeaturedProjects />
+
       <TrustedBy />
       <CTASection />
     </div>

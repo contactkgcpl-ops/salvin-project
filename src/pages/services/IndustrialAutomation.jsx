@@ -1,5 +1,5 @@
 import React from 'react';
-import FeaturedProjects from '../../components/sections/FeaturedProjects';
+
 import IndustriesWeServe from '../../components/sections/IndustriesWeServe';
 import CTASection from '../../components/sections/CTASection';
 import SEO from '../../components/SEO';
@@ -22,7 +22,7 @@ const IndustrialAutomation = () => {
       </div>
       
       <IndustriesWeServe />
-      <FeaturedProjects />
+
       <CTASection />
     </div>
   );
