@@ -30,9 +30,11 @@ import DryFruitChikkiDetailPage from './pages/TurnkeyProject/components/DryFruit
 import MamraPauvaDetailPage from './pages/TurnkeyProject/components/MamraPauvaDetailPage';
 import TomatoPureeDetailPage from './pages/TurnkeyProject/components/TomatoPureeDetailPage';
 import TomatoPasteDetailPage from './pages/TurnkeyProject/components/TomatoPasteDetailPage';
+import MangoPulpDetailPage from './pages/TurnkeyProject/components/MangoPulpDetailPage';
+import GuavaPulpDetailPage from './pages/TurnkeyProject/components/GuavaPulpDetailPage';
 
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import TurnkeyPlantSetup from './pages/services/TurnkeyPlantSetup';
@@ -76,6 +78,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="careers" element={<Careers />} />
           <Route path="turnkey-projects" element={<TurnkeyProjects />} />
+          <Route path="turnkey-project" element={<Navigate to="/turnkey-projects" replace />} />
           <Route path="turnkey-project/red-chilli-processing-plant" element={<RedChilliDetailPage />} />
           <Route path="turnkey-project/pizza-sauce-processing-plant" element={<PizzaSauceProcessingDetailPage />} />
           <Route path="turnkey-project/tomato-ketchup-manufacturing-plant" element={<TomatoKetchupManufacturingDetailPage />} />
@@ -105,6 +108,8 @@ function App() {
           <Route path="turnkey-project/mamra-pauva-plant" element={<MamraPauvaDetailPage />} />
           <Route path="turnkey-project/tomato-puree-plant" element={<TomatoPureeDetailPage />} />
           <Route path="turnkey-project/tomato-paste-plant" element={<TomatoPasteDetailPage />} />
+          <Route path="turnkey-project/mango-pulp-plant" element={<MangoPulpDetailPage />} />
+          <Route path="turnkey-project/guava-pulp-plant" element={<GuavaPulpDetailPage />} />
 
           <Route path="turnkey-project/:projectSlug" element={<TurnkeyDetailPage />} />
 

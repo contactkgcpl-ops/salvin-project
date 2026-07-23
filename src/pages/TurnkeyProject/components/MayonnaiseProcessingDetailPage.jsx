@@ -2,6 +2,7 @@ import WhyChooseSalvin from './WhyChooseSalvin';
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import './MayonnaiseProcessingDetailPage.css'
+import SEO from '../../../components/SEO';
 
 import eq1 from '../../../assets/turnkey-brochures/images/mayonnaise-processing-plant/oil_ingredient_dosing.webp';
 import eq2 from '../../../assets/turnkey-brochures/images/mayonnaise-processing-plant/high_shear_premixing.webp';

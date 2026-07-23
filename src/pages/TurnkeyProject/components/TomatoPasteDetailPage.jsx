@@ -132,7 +132,7 @@ export default function TomatoPasteDetailPage() {
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero">
         <div className="rcp-hero__overlay" />
-        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/tomato-paste-plant.jpg')` }} />
+        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/hero-banners/tomato_paste_hero.png')` }} />
         <div className="rcp-hero__content">
           <span className="rcp-hero__badge">
             <span className="rcp-hero__badge-dot" />
@@ -163,10 +163,10 @@ export default function TomatoPasteDetailPage() {
           <div className="rcp-overview__grid">
             <div className="rcp-overview__text">
               <p>
-                Salvin Industries' Fully Automatic Tomato Paste Plant is engineered for high-capacity, continuous production of premium tomato paste. Designed for maximum efficiency, it integrates everything from raw tomato receiving to final carton packing.
+                <strong>Salvin Industries' High-Capacity Automatic Tomato Paste Plant</strong> is an industry-leading, continuous turnkey processing solution specifically engineered for the large-scale production of high-Brix, premium-quality tomato paste. From automated raw tomato receiving, washing, and heavy-duty pulping to final sterilization and packaging, our comprehensive <strong>tomato paste manufacturing line</strong> ensures maximum operational efficiency and minimal wastage.
               </p>
               <p>
-                The core of the system features advanced multi-effect evaporation and vacuum concentration. This technology rapidly concentrates the puree into high-brix paste at lower temperatures, ensuring that the natural red lycopene color, intense flavor, and nutritional profile are fully preserved for the end consumer.
+                The powerhouse of this advanced <strong>tomato paste processing machine</strong> lies in our sophisticated multi-effect vacuum evaporation technology. By rapidly concentrating the tomato juice at significantly lower boiling points, this highly energy-efficient system prevents caramelization, flawlessly preserving the intense natural flavor, deep red lycopene color, and rich nutritional integrity of the tomatoes. Complete with commercial paste homogenization and precise aseptic filling, Salvin’s <strong>industrial tomato paste plant</strong> delivers an export-grade product with extended shelf life and unmatched consistency.
               </p>
               <div className="rcp-overview__features">
                 {/* Feature 1 */}
@@ -225,7 +225,7 @@ export default function TomatoPasteDetailPage() {
               </div>
             </div>
             <div className="rcp-overview__image rcp-overview__image--photo">
-              <img src="/turnkey-brochures/images/tomato-paste-plant.jpg" alt="Tomato Paste Processing Plant" loading="lazy" />
+              <img src="/turnkey-brochures/images/tomato-paste-gallery/tomato_paste_2.jpg" alt="Tomato Pulping Line" loading="lazy" />
             </div>
           </div>
         </div>

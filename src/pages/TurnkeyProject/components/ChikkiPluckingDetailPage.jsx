@@ -132,7 +132,7 @@ export default function ChikkiPluckingDetailPage() {
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero">
         <div className="rcp-hero__overlay" />
-        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/chikki-plucking-gallery/chikki_plucking_2.jpg')` }} />
+        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/hero-banners/chikki_plucking_hero.png')` }} />
         <div className="rcp-hero__content">
           <span className="rcp-hero__badge">
             <span className="rcp-hero__badge-dot" />
@@ -163,11 +163,10 @@ export default function ChikkiPluckingDetailPage() {
           <div className="rcp-overview__grid">
             <div className="rcp-overview__text">
               <p>
-                Salvin Industries' Brittle (Chikki) Plucking Plant is a turnkey industrial solution designed for high productivity,
-                efficiency, and consistent quality. Our fully automated line handles every stage — from cooking the sugar syrup to depositing, cooling, cutting, and packaging.
+                <strong>Salvin Industries' Fully Automated Brittle (Chikki) Plucking Plant</strong> is an advanced, industrial-grade turnkey processing solution engineered for seamless, high-volume production. This state-of-the-art plant eliminates manual handling by automating every critical stage, including precise sugar syrup cooking, uniform depositing, rapid cooling, accurate sheet cutting, and hygienic final packaging.
               </p>
               <p>
-                Engineered with food-grade stainless steel, this plant ensures strict hygiene compliance while delivering uniform cooling and perfect texture for your final product.
+                Designed strictly with food-grade SS304/SS316 stainless steel, our <strong>chikki making machine line</strong> guarantees unparalleled food safety, zero cross-contamination, and strict FSSAI compliance. Our innovative automated plucking technology ensures minimal breakage, while the optimized cooling tunnels deliver the perfect crisp and brittle texture that premium chikki brands demand. Maximize your output and reduce labor costs with Salvin’s robust and energy-efficient <strong>brittle processing solutions</strong>.
               </p>
               <div className="rcp-overview__features">
                 {/* Feature 1 */}
@@ -226,7 +225,7 @@ export default function ChikkiPluckingDetailPage() {
               </div>
             </div>
             <div className="rcp-overview__image rcp-overview__image--photo">
-              <img src="/turnkey-brochures/images/chikki-plucking-gallery/chikki_plucking_2.jpg" alt="Brittle Chikki Plucking Plant" loading="lazy" />
+              <img src="/turnkey-brochures/images/chikki-plucking-gallery/chikki_plucking_1.jpg" alt="Fully Automated Brittle Chikki Plucking Plant" loading="lazy" />
             </div>
           </div>
         </div>

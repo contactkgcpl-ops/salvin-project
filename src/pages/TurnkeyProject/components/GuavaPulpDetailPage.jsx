@@ -6,87 +6,87 @@ import WhyChooseSalvin from './WhyChooseSalvin'
 
 /* ─── Process Flow Steps ─── */
 const PROCESS_STEPS = [
-  { id: 1, title: 'Washing & Sorting' },
-  { id: 2, title: 'Crushing (Pulper)' },
-  { id: 3, title: 'Pre-Heating' },
-  { id: 4, title: 'Pulping & Refining' },
-  { id: 5, title: 'Vacuum Concentration' },
-  { id: 6, title: 'Pasteurization' },
-  { id: 7, title: 'Aseptic Filling' }
+  { id: 1, title: 'Guava Receiving & Washing' },
+  { id: 2, title: 'Sorting & Inspection' },
+  { id: 3, title: 'Pulper & Finisher' },
+  { id: 4, title: 'Homogenization & Filtration' },
+  { id: 5, title: 'Vacuum Evaporation' },
+  { id: 6, title: 'Cooling & Pre-heating' },
+  { id: 7, title: 'Automatic Filling Line' }
 ]
 
 /* ─── Machinery Used ─── */
 const MACHINERY_LIST = [
   {
-    name: 'Tomato Washing & Sorting Machine',
-    image: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_1.jpg',
-    desc: 'High-capacity washing system with agitated water flumes and an inspection conveyor for manual sorting of raw tomatoes.'
+    name: 'Guava Washing Machine',
+    image: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_1.jpg',
+    desc: 'High-capacity washing flume and sorting conveyor ensuring only quality guavas proceed.'
   },
   {
-    name: 'Tomato Crushing & Pulping Machine',
-    image: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_2.jpg',
-    desc: 'Heavy-duty crushing and pulping unit designed to efficiently extract high-yield tomato juice while separating seeds and skin.'
+    name: 'Guava Pulper',
+    image: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_2.jpg',
+    desc: 'Heavy-duty pulper for maximum pulp extraction and seed separation.'
   },
   {
-    name: 'Steam Jacketed Cooking Kettle',
-    image: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_3.jpg',
-    desc: 'Jacketed heating vessel for pre-cooking and standardizing the tomato puree before concentration.'
+    name: 'Guava Pulp Preheating & Refining',
+    image: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_3.jpg',
+    desc: 'Temperature-controlled preheating tank with integrated refining system for consistent pulp quality.'
   },
   {
-    name: 'Vacuum Evaporator Concentration System',
-    image: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_4.jpg',
-    desc: 'Vacuum concentration system that gently removes excess water at lower temperatures to preserve the natural lycopene color and flavor.'
+    name: 'Vacuum Evaporation Concentration System',
+    image: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_4.jpg',
+    desc: 'Vacuum concentration system that gently removes water to increase brix level and preserve aroma.'
   },
   {
-    name: 'Tomato Puree Evaporation System',
-    image: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_5.jpg',
-    desc: 'Multi-stage evaporation tanks for continuous concentration of the puree to the desired brix level.'
+    name: 'Guava Pulp Sterilization Unit',
+    image: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_5.jpg',
+    desc: 'Advanced tubular sterilization for precise pasteurization while retaining natural flavor and nutrients.'
   },
   {
-    name: 'Automatic Filling & Capping Machine',
-    image: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_6.jpg',
-    desc: 'High-precision automated filling line to hygienically pack the sterilized puree into glass jars, bottles, or aseptic bags.'
+    name: 'Automatic Guava Pulp Filling Machine',
+    image: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_6.jpg',
+    desc: 'Highly automated filling into bottles or bags with precise capping and labeling integration.'
   }
 ]
 
 /* ─── FAQs ─── */
 const FAQS = [
   {
-    question: "Does this plant preserve the natural red color?",
-    answer: "Yes, our vacuum evaporation and optimized heating technologies preserve the natural lycopene, color, and aroma of tomatoes."
+    question: "What is the processing capacity of the Guava Pulp Plant?",
+    answer: "Our turnkey plants are fully customizable, with capacities ranging from 1 Ton/Hr up to 10+ Tons/Hr based on your requirements."
   },
   {
-    question: "Can it be used to make tomato paste as well?",
-    answer: "This line is optimized for puree. For high brix tomato paste, we offer a dedicated Tomato Paste Plant with multi-effect evaporators."
+    question: "Does the plant maintain the natural color and flavor?",
+    answer: "Yes, advanced deaeration, homogenization, and rapid pasteurization ensure the natural color, flavor, and nutrients of the guava are perfectly preserved."
   },
   {
-    question: "What packaging options does it support?",
-    answer: "The line supports aseptic bags, hot-fill bottles, cans, and retail pouches based on the filling machine configured."
+    question: "How does it handle guava seeds?",
+    answer: "Our specialized pulping and refining (finisher) systems are designed to effectively separate the hard guava seeds from the pulp without crushing them, preventing any bitter taste."
   },
   {
-    question: "Does SALVIN provide installation and support?",
-    answer: "Yes. We provide complete turnkey solutions including installation, commissioning, operator training, and reliable after-sales support."
+    question: "What types of packaging does it support?",
+    answer: "The line integrates with aseptic bag-in-drum fillers, hot-fill bottles, cans, and retail pouches."
   },
   {
-    question: "Why choose SALVIN for Tomato Puree Plants?",
-    answer: "SALVIN offers food-grade machinery, energy-efficient systems, customized solutions, reliable performance, and complete engineering support."
+    question: "Does SALVIN provide complete installation?",
+    answer: "Absolutely. We offer end-to-end turnkey solutions including process engineering, equipment manufacturing, installation, and commissioning."
   }
 ]
 
 /* ─── Gallery Images ─── */
 const GALLERY_IMAGES = [
-  { src: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_1.jpg', caption: 'Tomato Washing & Sorting Machine' },
-  { src: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_2.jpg', caption: 'Tomato Crushing & Pulping Machine' },
-  { src: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_3.jpg', caption: 'Steam Jacketed Cooking Kettle' },
-  { src: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_4.jpg', caption: 'Vacuum Evaporator Concentration System' },
-  { src: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_5.jpg', caption: 'Tomato Puree Evaporation System' },
-  { src: '/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_6.jpg', caption: 'Automatic Filling & Capping Machine' }
+  { src: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_1.jpg', caption: 'Guava Washing Machine' },
+  { src: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_2.jpg', caption: 'Guava Pulper' },
+  { src: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_3.jpg', caption: 'Guava Pulp Preheating & Refining' },
+  { src: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_4.jpg', caption: 'Vacuum Evaporation Concentration System' },
+  { src: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_5.jpg', caption: 'Guava Pulp Sterilization Unit' },
+  { src: '/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_6.jpg', caption: 'Automatic Guava Pulp Filling Machine' }
 ]
 
 /* ════════════════════════════════════════════════════════════════════
    MAIN COMPONENT
    ════════════════════════════════════════════════════════════════════ */
-export default function TomatoPureeDetailPage() {
+export default function GuavaPulpDetailPage() {
   const [galleryIndex, setGalleryIndex] = useState(0)
   const [isVisible, setIsVisible] = useState({})
   const [activeFaq, setActiveFaq] = useState(null)
@@ -125,24 +125,25 @@ export default function TomatoPureeDetailPage() {
   return (
     <div className="rcp-page">
       <SEO 
-        title="Fully Automated Tomato Puree Processing Plant | Turnkey Solutions"
-        description="End-to-end turnkey Tomato Puree Processing Plant by Salvin Industries. High efficiency crushing, evaporation & aseptic filling."
+        title="Fully Automatic Guava Pulp Processing Plant Manufacturer | Turnkey Solutions"
+        description="Salvin Industries provides end-to-end Fully Automatic Guava Pulp Processing Plants. High efficiency turnkey solutions for guava washing, pulping, evaporation & aseptic filling."
+        keywords="guava pulp processing plant, fully automatic guava pulp plant manufacturer, guava juice processing machinery, industrial guava pulper machine, turnkey fruit processing line, aseptic guava pulp filling line, fruit processing plant setup"
       />
 
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero">
         <div className="rcp-hero__overlay" />
-        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/hero-banners/tomato_puree_hero.png')` }} />
+        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/hero-banners/guava_hero.jpg')` }} />
         <div className="rcp-hero__content">
           <span className="rcp-hero__badge">
             <span className="rcp-hero__badge-dot" />
             TURNKEY PROCESSING SOLUTION
           </span>
           <h1 className="rcp-hero__title">
-            Tomato Puree Processing Plant
+            Fully Automatic Guava Pulp Plant
           </h1>
           <p className="rcp-hero__subtitle">
-            Fully Automated Process For High Efficiency, Maximum Output & Superior Quality
+            Advanced Processing Technology for High-Yield & Premium Quality Guava Pulp
           </p>
           <div className="rcp-hero__actions">
             <NavLink to="/contact" className="rcp-btn rcp-btn--primary rcp-btn--lg">
@@ -163,10 +164,10 @@ export default function TomatoPureeDetailPage() {
           <div className="rcp-overview__grid">
             <div className="rcp-overview__text">
               <p>
-                <strong>Salvin Industries' Fully Automated Tomato Puree Processing Plant</strong> is a cutting-edge, commercial-grade turnkey manufacturing line designed for high-yield, continuous extraction of premium tomato puree. This comprehensive <strong>tomato processing equipment</strong> integrates gentle water-flume washing, precision sorting, heavy-duty crushing, and advanced pulping to extract the maximum amount of high-quality pulp while effectively separating seeds and skins.
+                <strong>Salvin Industries' Fully Automatic Guava Pulp Processing Plant</strong> is an advanced, large-scale industrial turnkey solution engineered to extract premium-grade guava pulp with unmatched efficiency. From raw guava reception in our robust <strong>Guava Washing Machines</strong> to precision seed separation using heavy-duty <strong>Guava Pulpers</strong>, our complete <strong>guava processing line</strong> guarantees a seamless, touch-free hygienic operation that maximizes product yield.
               </p>
               <p>
-                At the core of this advanced <strong>tomato puree manufacturing plant</strong> is our state-of-the-art vacuum evaporation and thermal pasteurization technology. Operating at controlled low temperatures, this system meticulously preserves the vibrant natural red color (lycopene), fresh tomato aroma, and vital nutritional profiles without thermal degradation. Finished with highly accurate aseptic filling machines, our <strong>tomato processing solutions</strong> guarantee an extended shelf life, uncompromising hygiene, and strict compliance with global food safety standards.
+                Our high-performance production line integrates <strong>Guava Pulp Preheating & Refining</strong> systems and our state-of-the-art <strong>Vacuum Evaporation Concentration System</strong> to remove excess water and achieve the perfect Brix level. Followed by rapid processing in our <strong>Guava Pulp Sterilization Unit</strong> and touchless packaging via the <strong>Automatic Guava Pulp Filling Machine</strong>, this robust setup meticulously preserves the natural pink or white color, distinct tropical flavor, and rich nutrients of the guava. Fabricated entirely from food-grade stainless steel (SS304/316), Salvin's <strong>fruit processing solutions</strong> ensure extended shelf life and strict adherence to global food safety standards.
               </p>
               <div className="rcp-overview__features">
                 {/* Feature 1 */}
@@ -178,7 +179,7 @@ export default function TomatoPureeDetailPage() {
                     </svg>
                   </div>
                   <div className="rcp-overview__feature-body">
-                    <p className="rcp-overview__feature-title">High Yield Recovery</p>
+                    <p className="rcp-overview__feature-title">High Yield</p>
                     <p className="rcp-overview__feature-desc">Maximum pulp extraction</p>
                   </div>
                 </div>
@@ -204,8 +205,8 @@ export default function TomatoPureeDetailPage() {
                     </svg>
                   </div>
                   <div className="rcp-overview__feature-body">
-                    <p className="rcp-overview__feature-title">Color Preservation</p>
-                    <p className="rcp-overview__feature-desc">Vacuum concentration technology</p>
+                    <p className="rcp-overview__feature-title">Perfect Texture</p>
+                    <p className="rcp-overview__feature-desc">Homogenization & refining tech</p>
                   </div>
                 </div>
                 {/* Feature 4 */}
@@ -218,14 +219,14 @@ export default function TomatoPureeDetailPage() {
                     </svg>
                   </div>
                   <div className="rcp-overview__feature-body">
-                    <p className="rcp-overview__feature-title">Aseptic Filling</p>
-                    <p className="rcp-overview__feature-desc">Extended shelf life without preservatives</p>
+                    <p className="rcp-overview__feature-title">PLC Control</p>
+                    <p className="rcp-overview__feature-desc">Fully automatic operation</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="rcp-overview__image rcp-overview__image--photo">
-              <img src="/turnkey-brochures/images/tomato-puree-gallery/tomato_puree_5.jpg" alt="Tomato Puree Evaporation System" loading="lazy" />
+              <img src="/turnkey-brochures/images/guava-pulp-gallery/guava_pulp_1.jpg" alt="Fully Automatic Guava Pulp Plant" loading="lazy" />
             </div>
           </div>
         </div>
@@ -236,7 +237,7 @@ export default function TomatoPureeDetailPage() {
         <div className={`rcp-container rcp-animate ${isVisible['process-flow'] ? 'rcp-animate--in' : ''}`}>
           <div className="rcp-section-badge">Process Flow</div>
           <h2 className="rcp-section-title">Plant <span className="rcp-accent">Workflow</span></h2>
-          <p className="rcp-section-subtitle">A streamlined and fully integrated processing workflow designed to transform raw tomatoes into premium-quality packaged puree.</p>
+          <p className="rcp-section-subtitle">A streamlined and fully integrated processing workflow designed to transform raw guavas into premium-quality packaged pulp.</p>
 
           <div className="rcp-process-flow-container">
             {PROCESS_STEPS.map((step, i) => (
@@ -283,19 +284,13 @@ export default function TomatoPureeDetailPage() {
                     {step.id === 7 && (
                       <svg className="rcp-process-card__icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M12 22V12M3 12h18M12 2l9 5-9 5-9-5 9-5z" />
-                        <path d="M3 7v10l9 5 9-5V7" />
+                        <path d="M12 12l9-5" />
+                        <path d="M12 12L3 7" />
                       </svg>
                     )}
                   </div>
-                  <div className="rcp-process-card__label">{step.title}</div>
+                  <div className="rcp-process-card__label" style={{ minWidth: '100px' }}>{step.title}</div>
                 </div>
-                {i < PROCESS_STEPS.length - 1 && (
-                  <div className="rcp-process-arrow">
-                    <svg className="rcp-process-flow-arrow-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                      <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                )}
               </React.Fragment>
             ))}
           </div>
@@ -329,7 +324,7 @@ export default function TomatoPureeDetailPage() {
         <div className={`rcp-container rcp-animate ${isVisible['faq'] ? 'rcp-animate--in' : ''}`}>
           <div className="rcp-section-badge">FAQs</div>
           <h2 className="rcp-section-title">Frequently Asked <span className="rcp-accent">Questions</span></h2>
-          <p className="rcp-section-subtitle">Everything you need to know about our Tomato Puree Processing Plant.</p>
+          <p className="rcp-section-subtitle">Everything you need to know about our Guava Pulp Processing Plant.</p>
 
           <div className="rcp-faq__list">
             {FAQS.map((faq, index) => {
@@ -398,20 +393,20 @@ export default function TomatoPureeDetailPage() {
       </section>
 
       {/* ═══ WHY CHOOSE SALVIN ═══ */}
-      <WhyChooseSalvin prefix="rcp" isVisible={isVisible['why-salvin']} projectKey="TomatoPureeDetailPage" />
+      <WhyChooseSalvin prefix="rcp" isVisible={isVisible['why-salvin']} projectKey="GuavaPulpDetailPage" />
 
       {/* ═══ ENQUIRY / CONTACT CTA ═══ */}
       <section className="rcp-section rcp-cta" id="enquiry" data-animate>
         <div className={`rcp-container rcp-animate ${isVisible['enquiry'] ? 'rcp-animate--in' : ''}`}>
           <div className="rcp-cta__box">
-            <h2>Ready to Build Your Tomato Puree Plant?</h2>
+            <h2>Ready to Build Your Guava Pulp Plant?</h2>
             <p>
               Get a customised project proposal with capacity recommendations, plant layout, equipment list,
               timeline, and investment estimate — all tailored to your specific requirements.
             </p>
             <div className="rcp-cta__actions">
               <a
-                href="https://wa.me/919898727796?text=I%20am%20interested%20in%20the%20Tomato%20Puree%20Plant.%20Please%20share%20details."
+                href="https://wa.me/919898727796?text=I%20am%20interested%20in%20the%20Guava%20Pulp%20Plant.%20Please%20share%20details."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rcp-btn rcp-btn--primary rcp-btn--lg"

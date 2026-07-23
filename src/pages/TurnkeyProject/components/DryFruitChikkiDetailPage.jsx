@@ -132,7 +132,7 @@ export default function DryFruitChikkiDetailPage() {
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero">
         <div className="rcp-hero__overlay" />
-        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/dry-fruit-chikki-plant.jpg')` }} />
+        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/hero-banners/dry_fruit_chikki_hero.png')` }} />
         <div className="rcp-hero__content">
           <span className="rcp-hero__badge">
             <span className="rcp-hero__badge-dot" />
@@ -163,10 +163,10 @@ export default function DryFruitChikkiDetailPage() {
           <div className="rcp-overview__grid">
             <div className="rcp-overview__text">
               <p>
-                Salvin Industries' Fully Automated Dry Fruit Chikki Making Plant is a state-of-the-art solution ensuring hygiene, high productivity, and consistent quality. This plant seamlessly integrates roasting, chopping, syrup cooking, and uniform coating into one continuous process.
+                <strong>Salvin Industries' Fully Automated Dry Fruit Chikki Making Plant</strong> is a premium, high-efficiency turnkey solution tailored for large-scale, hygienic production of nut and dry fruit brittle. Our integrated <strong>chikki production line</strong> flawlessly connects continuous nut roasting, precise chopping, automated jaggery syrup cooking, and uniform mixing into a single, seamless workflow.
               </p>
               <p>
-                Built entirely with food-grade materials, our system prevents cross-contamination and preserves the natural flavors and nutrients of premium dry fruits, delivering the perfect crispy chikki every time.
+                Manufactured with heavy-duty food-grade stainless steel (SS304/316), this advanced <strong>dry fruit chikki processing machine</strong> prevents cross-contamination and strictly adheres to international food safety standards. Our precision slab forming and rapid cooling conveyor systems lock in the natural flavors, essential nutrients, and perfect crunch of premium dry fruits like almonds, cashews, and pistachios. Boost your manufacturing capacity and deliver a superior, consistently crisp product with Salvin's automated <strong>dry fruit brittle manufacturing plant</strong>.
               </p>
               <div className="rcp-overview__features">
                 {/* Feature 1 */}
@@ -225,7 +225,7 @@ export default function DryFruitChikkiDetailPage() {
               </div>
             </div>
             <div className="rcp-overview__image rcp-overview__image--photo">
-              <img src="/turnkey-brochures/images/dry-fruit-chikki-plant.jpg" alt="Dry Fruit Chikki Making Plant" loading="lazy" />
+              <img src="/turnkey-brochures/images/dry-fruit-chikki-gallery/dry_fruit_4.jpg" alt="Dry Fruit Chikki Making Plant" loading="lazy" />
             </div>
           </div>
         </div>

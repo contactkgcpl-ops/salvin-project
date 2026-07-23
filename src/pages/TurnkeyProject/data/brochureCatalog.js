@@ -60,7 +60,9 @@ const RAW = [
   ['dry-fruit-chikki-plant.jpg', null, 'Dry Fruit Chikki Making Plant', ['Complete turnkey solution for dry fruit chikki processing and packaging.', 'Advanced roasting, chopping, uniform coating and precision flow-wrap packing.'], '/turnkey-project/dry-fruit-chikki-plant'],
   ['mamra-pauva-plant.jpg', null, 'Mamra Pauva Processing Plant', ['End-to-end processing solutions for puffed rice (mamra/pauva).', 'Includes intake, puffing, dehusking, flavoring, and automatic packaging.'], '/turnkey-project/mamra-pauva-plant'],
   ['tomato-puree-plant.jpg', null, 'Tomato Puree Processing Plant', ['Complete automated tomato puree extraction and processing.', 'High efficiency crushing, evaporation, aseptic filling and packing.'], '/turnkey-project/tomato-puree-plant'],
-  ['tomato-paste-plant.jpg', null, 'Tomato Paste Plant', ['Fully automated turnkey plant for premium tomato paste.', 'Features multi-effect evaporation and homogenisation for high brix concentration.'], '/turnkey-project/tomato-paste-plant']
+  ['tomato-paste-plant.jpg', null, 'Tomato Paste Plant', ['Fully automated turnkey plant for premium tomato paste.', 'Features multi-effect evaporation and homogenisation for high brix concentration.'], '/turnkey-project/tomato-paste-plant'],
+  ['mango-pulp-plant.jpg', null, 'Fully Automatic Mango Pulp Plant', ['Advanced processing technology for high-yield premium mango pulp.', 'Equipped with precision steam peeling, heavy-duty pulping, and aseptic filling.'], '/turnkey-project/mango-pulp-plant'],
+  ['guava-pulp-plant.jpg', null, 'Fully Automatic Guava Pulp Plant', ['Highly advanced extraction and refining for premium guava pulp.', 'Features specialised seed-separating pulpers and multi-stage homogenisation.'], '/turnkey-project/guava-pulp-plant']
 ]
 
 export const brochureProjects = RAW.map(([imageFile, pdfFile, title, lines, detailsPath], index) => {

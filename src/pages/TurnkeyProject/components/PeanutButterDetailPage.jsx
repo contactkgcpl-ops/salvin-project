@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import './PeanutButterDetailPage.css'
 import WhyChooseSalvin from './WhyChooseSalvin'
+import SEO from '../../../components/SEO'
 
 /* ─── Process Flow Steps ─── */
 const PROCESS_STEPS = [

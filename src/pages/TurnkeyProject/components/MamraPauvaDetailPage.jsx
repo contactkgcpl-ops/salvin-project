@@ -132,7 +132,7 @@ export default function MamraPauvaDetailPage() {
       {/* ═══ HERO BANNER ═══ */}
       <section className="rcp-hero">
         <div className="rcp-hero__overlay" />
-        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/mamra-pauva-plant.jpg')` }} />
+        <div className="rcp-hero__bg" style={{ backgroundImage: `url('/turnkey-brochures/images/hero-banners/mamra_pauva_hero.png')` }} />
         <div className="rcp-hero__content">
           <span className="rcp-hero__badge">
             <span className="rcp-hero__badge-dot" />
@@ -163,10 +163,10 @@ export default function MamraPauvaDetailPage() {
           <div className="rcp-overview__grid">
             <div className="rcp-overview__text">
               <p>
-                Salvin Industries' Mamra (Puffed Rice) and Pauva (Flattened Rice) Processing Plant is a fully integrated, automated solution covering everything from raw paddy intake to final carton packaging.
+                <strong>Salvin Industries' Industrial Mamra (Puffed Rice) and Pauva (Flattened Rice) Processing Plant</strong> is a highly robust, fully automated turnkey manufacturing solution engineered for maximum yield and premium product quality. From automated raw paddy intake and destoning to high-speed multi-head packing, our comprehensive <strong>puffed rice processing line</strong> ensures a completely touch-free, hygienic operation.
               </p>
               <p>
-                With advanced puffing machines, grading systems, and flavoring drums, the plant ensures uniform expansion and crispiness. Every machine is engineered to maximize throughput while minimizing energy consumption and labor requirements.
+                Equipped with advanced continuous roasting and puffing ovens, multi-stage cooling conveyors, and precision rotary flavoring drums, this high-tech <strong>mamra pauva making machine</strong> guarantees perfectly uniform grain expansion, consistent crispiness, and even flavor distribution. Built with heavy-duty food-grade materials, our energy-efficient <strong>flattened rice processing plant</strong> significantly reduces operational costs, minimizes labor dependence, and maximizes overall production throughput to meet soaring market demands.
               </p>
               <div className="rcp-overview__features">
                 {/* Feature 1 */}
@@ -225,7 +225,7 @@ export default function MamraPauvaDetailPage() {
               </div>
             </div>
             <div className="rcp-overview__image rcp-overview__image--photo">
-              <img src="/turnkey-brochures/images/mamra-pauva-plant.jpg" alt="Mamra Pauva Processing Plant" loading="lazy" />
+              <img src="/turnkey-brochures/images/mamra-pauva-gallery/mamra_pauva_2.jpg" alt="Mamra Pauva Processing Plant Oven" loading="lazy" />
             </div>
           </div>
         </div>

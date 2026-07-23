@@ -54,9 +54,14 @@ const Breadcrumbs = () => {
               </Link>
             </li>
             {pathnames.map((value, index) => {
-              const to = `/${pathnames.slice(0, index + 1).join('/')}`;
+              let to = `/${pathnames.slice(0, index + 1).join('/')}`;
               const isLast = index === pathnames.length - 1;
               const formattedName = value.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+              // Explicitly fix the "Turnkey Project" link
+              if (value === 'turnkey-project' && index === 0) {
+                to = '/turnkey-projects';
+              }
 
               return (
                 <React.Fragment key={to}>
